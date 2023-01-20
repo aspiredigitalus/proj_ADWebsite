@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --color-background: #ffff;
+    --color-primary: #e22127;
+    --color-secondary: #000000;
+    --color-header: #444143;
+    --color-body: #a0a0a0;
+
+    --color-sap1: #f0ab00;
+    --color-sap2: #a8a240;
+    --color-sap3: #609a7f;
+    --color-sap4: #008fd3;
+
+    --color-sap5: #f0ab00;
+    --color-sap6: #d2742c;
+    --color-sap7: #bb4a4e;
+    --color-sap8: #970a82;
+
+    --color-sap9: #f0ab00;
+    --color-sap10: #ec9100;
+    --color-sap11: #e87800;
+    --color-sap12: #e35500;
+
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Cormorant Garamond', serif;
+
+}
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: var(--font-primary);
+    color: var(--color-header);
+
+}
+h2 {
+    font-size: 22px;
+    font-family: var(--font-primary);
+    color: var(--color-header);
+}
+h3 {
+    font-size: 17px;
+    font-family: var(--font-primary);
+    color: var(--color-header);
+}
+h4 {
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: var(--font-secondary);
+    color: var(--color-header);
+}
+h5 {
+    font-size: 14px;
+    font-weight: 800;
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+}
+p {
+    font-size: 14px;
+    font-family: var(--font-primary);
+    color: var(--color-body);
+}
