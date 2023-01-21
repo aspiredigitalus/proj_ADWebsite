@@ -1,0 +1,6 @@
+.design {
+    min-height: 400px;
+    width: 100%;
+    background-color: var(--color-secondary);
+    bottom: 0;
+}

@@ -1,0 +1,12 @@
+.size {
+    min-height: 120px;
+    width: 100%;
+}
+.color {
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 33%, rgba(226,33,39,1) 91%, rgba(226,33,39,1) 100%);
+}
+.logo {
+    margin-top: 10px;
+    margin-left: 5px;
+}

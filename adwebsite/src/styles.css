@@ -22,40 +22,93 @@
     --color-sap12: #e35500;
 
     --font-primary: 'Montserrat', sans-serif;
-    --font-secondary: 'Cormorant Garamond', serif;
+    --font-secondary: 'Poiret One', cursive;
+
+}
+body {
+    cursor: default;
+    
 
 }
 h1 {
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 600;
+    font-style: none;
+    font-variant: none;
     font-family: var(--font-primary);
     color: var(--color-header);
+    margin-bottom: 40px;
 
 }
 h2 {
-    font-size: 22px;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
     font-family: var(--font-primary);
     color: var(--color-header);
+    margin-bottom: 25px;
 }
 h3 {
-    font-size: 17px;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: none;
     font-family: var(--font-primary);
     color: var(--color-header);
+    margin-bottom: 25px;
 }
 h4 {
     font-size: 25px;
-    font-weight: lighter;
+    font-weight: 100;
+    font-style: none;
     font-family: var(--font-secondary);
     color: var(--color-header);
+    margin-bottom: 25px;
 }
 h5 {
-    font-size: 14px;
-    font-weight: 800;
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: none;
     font-family: var(--font-primary);
-    color: var(--color-primary);
+    color: var(--color-header);
+    margin-bottom: 25px;
 }
 p {
     font-size: 14px;
+    font-weight: 400;
+    font-style: none;
     font-family: var(--font-primary);
     color: var(--color-body);
+    margin-bottom: 10px;
+}
+em {
+    font-size: inherit;
+    font-weight: 600;
+    color: var(--color-primary);
+    
+}
+em:hover {
+    font-size: inherit; 
+    font-weight: 800;
+    transition-duration: .5s;
+}
+div {
+    font-size: 14px;
+    font-family: var(--font-primary);
+    color: var(--color-header);
+}
+span {
+    font-size: 14px;
+    font-family: var(--font-primary);
+    color: var(--color-header);
+}
+a {
+    font-size: 14px;
+    font-family: var(--font-primary);
+    color: var(--color-header);
+}
+button {
+    font-size: 14px;
+    font-family: var(--font-primary);
+    color: var(--color-header);
 }
