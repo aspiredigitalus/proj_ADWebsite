@@ -26,7 +26,8 @@
             ],
             "styles": [
               "node_modules/normalize.css/normalize.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/custom-theme.scss"
             ],
             "scripts": []
           },

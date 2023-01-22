@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'header_layer1',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderLayer1Component {
 
+  constructor (private router: Router){}
+    
+  onClick() {
+    this.router.navigateByUrl('/')
+  }
 }

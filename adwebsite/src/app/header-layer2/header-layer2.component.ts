@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+
+
 @Component({
   selector: 'header_layer2',
   templateUrl: './header-layer2.component.html',

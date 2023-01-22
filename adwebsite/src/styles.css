@@ -25,10 +25,9 @@
     --font-secondary: 'Poiret One', cursive;
 
 }
+html, body { height: 100%; }
 body {
     cursor: default;
-    
-
 }
 h1 {
     font-size: 34px;
@@ -112,3 +111,6 @@ button {
     font-family: var(--font-primary);
     color: var(--color-header);
 }
+
+
+
