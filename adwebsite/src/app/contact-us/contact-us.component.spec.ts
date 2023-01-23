@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderLayer1Component } from './header-layer1.component';
+import { ContactUsComponent } from './contact-us.component';
 
-describe('HeaderLayer1Component', () => {
-  let component: HeaderLayer1Component;
-  let fixture: ComponentFixture<HeaderLayer1Component>;
+describe('ContactUsComponent', () => {
+  let component: ContactUsComponent;
+  let fixture: ComponentFixture<ContactUsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderLayer1Component ]
+      declarations: [ ContactUsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HeaderLayer1Component);
+    fixture = TestBed.createComponent(ContactUsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'header_layer1',
-  templateUrl: './header-layer1.component.html',
-  styleUrls: ['./header-layer1.component.css']
+  selector: 'header-main',
+  templateUrl: './header-main.component.html',
+  styleUrls: ['./header-main.component.css']
 })
-export class HeaderLayer1Component {
-
+export class HeaderMainComponent {
   constructor (private router: Router){}
     
   onClick() {

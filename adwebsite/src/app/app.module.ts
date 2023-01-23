@@ -8,25 +8,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaletteComponent } from './palette/palette.component';
 import { FooterComponent } from './footer/footer.component';
-import { HeaderLayer1Component } from './header-layer1/header-layer1.component';
-import { HeaderLayer2Component } from './header-layer2/header-layer2.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BlankBodyComponent } from './blank-body/blank-body.component';
 import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderMainComponent } from './header-main/header-main.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PaletteComponent,
     FooterComponent,
-    HeaderLayer1Component,
-    HeaderLayer2Component,
     BlankBodyComponent,
     HomeComponent,
     WelcomeComponent,
     ButtonsComponent,
+    HeaderMainComponent,
+    ContactUsComponent,
     
   ],
   imports: [
@@ -36,7 +37,8 @@ import { ButtonsComponent } from './buttons/buttons.component';
     MatMenuModule,
     MatTabsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

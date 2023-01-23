@@ -25,10 +25,13 @@
     --font-secondary: 'Poiret One', cursive;
 
 }
-html, body { height: 100%; }
+html, body, app-root { height: 100%; }
 body {
+
+    position: relative;
     cursor: default;
 }
+
 h1 {
     font-size: 34px;
     font-weight: 600;

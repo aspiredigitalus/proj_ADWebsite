@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderLayer2Component } from './header-layer2.component';
+import { HeaderMainComponent } from './header-main.component';
 
-describe('HeaderLayer2Component', () => {
-  let component: HeaderLayer2Component;
-  let fixture: ComponentFixture<HeaderLayer2Component>;
+describe('HeaderMainComponent', () => {
+  let component: HeaderMainComponent;
+  let fixture: ComponentFixture<HeaderMainComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderLayer2Component ]
+      declarations: [ HeaderMainComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HeaderLayer2Component);
+    fixture = TestBed.createComponent(HeaderMainComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,10 +1,21 @@
-.design {
-    padding-bottom: 0px;
-
-    margin-left: 20%;
-    margin-right: 20%;
+#body-container {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
 }
-.sticky_header {
-    position: sticky;
-    top: 0px;
+
+#main {
+    flex: 1;
+}
+.menu-container {
+    position:absolute;
+    top: 200px;
+    left: 5px;
+}
+.menu-button {
+    
+    display: block;
+    width: 120px;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
 }

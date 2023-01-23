@@ -1,7 +1,20 @@
-<header_layer1></header_layer1>
-<!--<header_layer2 class="sticky_header"></header_layer2>-->
-<main class="design">
-    <router-outlet></router-outlet>
-</main>
-<footer></footer>
+<div id="body-container">
+    <header-main></header-main>
+    <main id="main">
+        <router-outlet></router-outlet>
+    </main>
+    <footer></footer>
+    <div class="menu-container">
+        <button mat-stroked-button color="primary" class="menu-button" [routerLink]="['/home']">Home</button>
+        <button mat-stroked-button color="primary" class="menu-button" [routerLink]="['/contact-us']">Contact</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
 
