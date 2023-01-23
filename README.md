@@ -1,3 +1,3 @@
 # proj_ADWebsite
 
-The best Anime is by PIXAR.
+Watch Evangelion it's a seminal work
