@@ -1,3 +1,3 @@
 # proj_ADWebsite
 
-Cory only watches cartoons in funny languages.
+Actually I watched Invincible Season 1 and that's in a dumb language.
