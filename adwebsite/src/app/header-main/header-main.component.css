@@ -1,6 +1,6 @@
 .color {
     background: rgb(255,255,255);
-    background: linear-gradient(135deg, rgba(255,255,255,1) 33%, rgba(226,33,39,1) 91%, rgba(226,33,39,1) 100%);
+    background: linear-gradient(135deg, var(--color-background) 33%, var(--color-primary) 91%, var(--color-primary) 100%);
 }
 .logo {
     margin-top: 10px;
