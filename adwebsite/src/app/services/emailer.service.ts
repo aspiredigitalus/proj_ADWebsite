@@ -6,11 +6,12 @@ import { Inquiry } from '../models/inquiry/inquiry.module';
 })
 export class EmailerService {
 
-  constructor(email: Inquiry) { }
+  constructor() { }
 
 
-  send(){
-    
+  send(email: Inquiry){
+    console.log(email.subject);
+    console.log(email.body);
   };
 
 
