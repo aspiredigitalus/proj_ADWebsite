@@ -5,19 +5,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {
-    path: '', 
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-  {
-    path: 'home', 
-    component: HomeComponent
-  },
-  {
-    path: 'contact-us',
-    component: ContactUsComponent
-  }
+  
 ];
 
 @NgModule({
