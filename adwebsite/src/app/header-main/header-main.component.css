@@ -1,9 +1,37 @@
-.color {
-    background: rgb(255,255,255);
-    background: linear-gradient(135deg, var(--color-background) 33%, var(--color-primary) 91%, var(--color-primary) 100%);
+h3 {
+    margin:0;
 }
-.logo {
-    margin-top: 10px;
-    margin-left: 5px;
-    cursor: pointer;
+h5 {
+    margin:0;
+}
+ul {
+    padding:0;
+    margin:0;
+}
+.header_container {
+    
+}
+.header_container {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    align-items: baseline;
+    border-bottom: 2px solid #999999;
+    opacity: 100%;
+}
+.nav_bar_links {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: left;
+    align-self:baseline;
+    margin-right: 1.3em;
+}
+#nav-bar {
+    margin-left: 2em;
+    display: flex;
+}
+#nav-bar ul{
+
+}
+#nav-bar h5 {
+    font-size: 16px;
 }

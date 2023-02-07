@@ -1,12 +1,37 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 /* You can add global styles to this file, and also import other style files */
 :root {
     --color-background: #ffff;
-    --color-primary: #e60000;
-    /*--color-primary: #4432a8;*/
-    --color-secondary: #333333;
+    --color-dark: #333333;
     --color-header: #444143;
     --color-body: #a0a0a0;
 
+    /* Primary Palette */
+    --color-p50: #FCE0E0;
+    --color-p100: #F8B3B3;
+    --color-p200: #F38080;
+    --color-p300: #EE4D4D;
+    --color-p400: #EA2626;
+    --color-p500: #E60000;
+    --color-p600: #E30000;
+    --color-p700: #DF0000;
+    --color-p800: #D80000;
+    --color-p900: #D50000;
+
+    /*Secondary Palette*/
+    --color-s50: #E1E0EA;
+    --color-s100: #B3B3CB;
+    --color-s200: #8180A8;
+    --color-s300: #4F4D85;
+    --color-s400: #29266A;
+    --color-s500: #030050;
+    --color-s600: #030049;
+    --color-s700: #020040;
+    --color-s800: #020037;
+    --color-s900: #010027;
+
+    /*SAP Themes - 3 Sets */
     --color-sap1: #f0ab00;
     --color-sap2: #a8a240;
     --color-sap3: #609a7f;
@@ -26,7 +51,7 @@
     --font-secondary: 'Poiret One', cursive;
 
 }
-html, body, app-root { height: 100%; }
+html, body, app-root { height: 100vh; }
 body {
 
     position: relative;
@@ -110,11 +135,48 @@ a {
     font-family: var(--font-primary);
     color: var(--color-header);
 }
-button {
-    font-size: 14px;
+
+
+
+/**********************Buttons*******************************/
+/************************************************************/
+.ad-btn {
+    min-width:fit-content;
+    height:fit-content;
+    padding: .5em 1.3em .5em 1.3em;
+    margin: 1em;
+    border-radius: 7px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight:600;
     font-family: var(--font-primary);
-    color: var(--color-header);
+    text-decoration: none;
 }
+
+.ad-btn-primary {
+    background-color: var(--color-p500);
+    color: var(--color-s50);
+    border: transparent;
+    transform: all .5s;
+}
+.ad-btn-primary:hover {
+    background-color: var(--color-p300);
+    color: var(--color-s900)
+}
+.ad-btn-primary:active {
+    background-color: var(--color-p700);
+    color: var(--color-s50);
+}
+
+i {
+    color: inherit;
+    font-size: inherit;
+    padding: .1em .4em 0 .4em;
+    text-align: center;
+}
+
 
 
 
