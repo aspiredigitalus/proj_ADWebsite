@@ -176,6 +176,10 @@ i {
     padding: .1em .4em 0 .4em;
     text-align: center;
 }
+select {
+    border: 1px solid var(--color-p500);
+    cursor: pointer;
+}
 
 
 
