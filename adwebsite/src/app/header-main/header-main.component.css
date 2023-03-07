@@ -25,7 +25,7 @@ ul {
     border-bottom: 2px solid #999999;
     opacity: 100%;
 }
-.nav-bar h5 {
+.nav-bar h5, .nav-bar a {
     font-size: 16px;
     align-self: center;
 }

@@ -5,6 +5,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { OurMasterComponent } from './our-master/our-master.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SapSolutionsComponent } from './sap-solutions/sap-solutions.component';
 import { WhatMasterComponent } from './what-master/what-master.component';
 import { WhoMasterComponent } from './who-master/who-master.component';
 
@@ -16,6 +17,7 @@ const routes: Routes = [
     {path: 'ourthinking', component: OurMasterComponent},
     {path: 'careers', component: CareersMasterComponent},
     {path: 'contactus', component: ContactUsComponent},
+    {path: 'SAP-Solutions', component: SapSolutionsComponent},
     {path: '**', component: PageNotFoundComponent}
 ];
 

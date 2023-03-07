@@ -19,6 +19,7 @@ import { WhoMasterComponent } from './who-master/who-master.component';
 import { WhatMasterComponent } from './what-master/what-master.component';
 import { OurMasterComponent } from './our-master/our-master.component';
 import { CareersMasterComponent } from './careers-master/careers-master.component';
+import { SapSolutionsComponent } from './sap-solutions/sap-solutions.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { CareersMasterComponent } from './careers-master/careers-master.componen
     WhatMasterComponent,
     OurMasterComponent,
     CareersMasterComponent,
+    SapSolutionsComponent,
     
   ],
   imports: [
