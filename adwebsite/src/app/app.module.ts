@@ -15,6 +15,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderMainComponent } from './header-main/header-main.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { WhoMasterComponent } from './who-master/who-master.component';
+import { WhatMasterComponent } from './what-master/what-master.component';
+import { OurMasterComponent } from './our-master/our-master.component';
+import { CareersMasterComponent } from './careers-master/careers-master.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HeaderMainComponent,
     ContactUsComponent,
     PageNotFoundComponent,
+    WhoMasterComponent,
+    WhatMasterComponent,
+    OurMasterComponent,
+    CareersMasterComponent,
     
   ],
   imports: [

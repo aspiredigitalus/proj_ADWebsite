@@ -1,49 +1,88 @@
 <div class="header_container">
     <div class="logo">
-        <img src="assets/media/logo.png" width="250"/>
+        <a [routerLink]="['home']"><img src="assets/media/logo.png" width="250"/></a>
     </div>
-    <div id="nav-bar">
-        <ul>
-            <li class="nav_bar_links nav-link what_we_do" id="what_we_do"><h5>What We Do</h5>
-                
+    <div class="nav-bar">
+        <ul class="nav-bar-list">
+            <li class="nav_bar_links nav-link" id="what_we_do"><a [routerLink]="['whatwedo']"><h5>What We Do</h5></a>
                 <div class="nav_dropdown menu_what_we_do">
                     <div class="triangle" style="left:150px;"></div>
                     <div class="box">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap:10px;">
+                        <div class="menu-box menu-box-what">
                             <div>
-                                <h3>SAP Solutions</h3>
-                                <p>C4C - Cloud for Customer</p>
-                                <p>CPQ - Configure Price Quote</p>
-                                <p>Sales Performance Management</p>
+                                <h3 class="menu-header">SAP Solutions</h3>
+                                <p class="menu-item">C4C - Cloud for Customer</p>
+                                <p class="menu-item">CPQ - Configure Price Quote</p>
+                                <p class="menu-item">Sales Performance Management</p>
                             </div>
                             <div>
-                                <h3>Digital Services</h3>
-                                <p>Web Development</p>
-                                <p>Digital Marketing</p>
-                                <p>Scalability Planning</p>
+                                <h3 class="menu-header">Digital Services</h3>
+                                <p class="menu-item">Web Development</p>
+                                <p class="menu-item">Digital Marketing</p>
+                                <p class="menu-item">Scalability Planning</p>
                             </div>
                             <div>
-                                <h3>Industries</h3>
-                                <p>Tellecommunication</p>
-                                <p>Industrial</p>
-                                <p>Manufacturing</p>
-                                <p>Medical</p>
-                                <p>Agriculture</p>
-                                <p>Technology</p>
+                                <h3 class="menu-header">Industries</h3>
+                                <p class="menu-item">Tellecommunication</p>
+                                <p class="menu-item">Industrial</p>
+                                <p class="menu-item">Manufacturing</p>
+                                <p class="menu-item">Medical</p>
+                                <p class="menu-item">Agriculture</p>
+                                <p class="menu-item">Technology</p>
 
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="nav_bar_links nav-link who_we_are" id="who_we_are"><h5>Who We Are</h5>
-                <div id="menu_who_we_are"> </div>
+            <li class="nav_bar_links nav-link" id="who_we_are"><a [routerLink]="['whoweare']"><h5>Who We Are</h5></a>
+                <div class="nav_dropdown menu_who_we_are">
+                    <div class="triangle" style="left:150px;"></div>
+                    <div class="box">
+                        <div class="menu-box menu-box-who">
+                            <div>
+                                <h3 class="menu-header">Consultants</h3>
+                                <p class="menu-item">The Process</p>
+                                <p class="menu-item">Money Savings</p>
+                                <p class="menu-item">Time Savings</p>
+                            </div>
+                            <div style="display:flex; flex-direction: column; justify-content: space-between;">
+                                <h3 class="menu-header">Our Staff</h3>
+                                <h3 class="menu-header">Locations</h3>
+                                <h3 class="menu-header">Contact Us</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li class="nav_bar_links nav-link our_thinking" id="our_thinking"><h5>Our Thinking</h5>
-                <div id="menu_our_thinking"> </div>
+            <li class="nav_bar_links nav-link" id="our_thinking"><a [routerLink]="['ourthinking']"><h5>Our Thinking</h5></a>
+                <div class="nav_dropdown menu_our_thinking">
+                    <div class="triangle" style="left:120px;"></div>
+                    <div class="box">
+                        <div class="menu-box menu-box-our">
+                            <div>
+                                <h3 class="menu-header">Diversity</h3>
+                                <h3 class="menu-header">Our Pledge</h3>
+                                <h3 class="menu-header">Mission Statement</h3>
+                                <h3 class="menu-header">Cloud Central Design</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li class="nav_bar_links nav-link careers" id="careers"><h5>Careers</h5>
-                <div id="menu_careers"> </div>
+            <li class="nav_bar_links nav-link" id="careers"><a [routerLink]="['careers']"><h5>Careers</h5></a>
+                <div class="nav_dropdown menu_careers">
+                    <div class="triangle" style="left:75px;"></div>
+                    <div class="box">
+                        <div class="menu-box menu-box-careers">
+                            <div>
+                                <h3 class="menu-header">Culture</h3>
+                                <h3 class="menu-header">Openings</h3>
+                                <h3 class="menu-header">Apply Now</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>

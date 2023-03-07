@@ -9,39 +9,30 @@
                     </p>
                 </div>
                 <div class="slogan_link">
-                    <a href="#what_we_do"class="ad-btn ad-btn-primary">Find Out More <i class="bi bi-plus-circle-fill"></i></a>
+                    <a [routerLink]="['']" fragment="what_we_do_section" class="ad-btn ad-btn-primary">Find Out More <i class="bi bi-plus-circle-fill"></i></a>
                 </div>
             </div>
         </div>
         <div class="img-layer">
             <img src="assets/media/Lines-PNG-Free-Image.png" class="rotate"/>
         </div>
-
     </div>
 </section>
-<section id="what_we_do">
+<section id="what_we_do_section">
     <div id="header_what">
         <h3>What We Do</h3>
     </div>
-    <div class="container_what">
-
-    </div>
-
+    <what-master></what-master>
 </section>
-<section id="who_we_are">
+<section id="who_we_are_section">
     <div id="header_who">
         <h3>Who We Are</h3>
     </div>
-    <div class="container_who">
-
-    </div>
-
+    <who-master></who-master>
 </section>
-<section id="our_thinking">
+<section id="our_thinking_section">
     <div id="header_our">
         <h3>Our Thinking</h3>
     </div>
-    <div class="container_our">
-
-    </div>
+    <our-master></our-master>
 </section>
