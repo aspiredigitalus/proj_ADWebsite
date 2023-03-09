@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, RequiredValidator } from '@angular/forms';
+import { FormGroup, FormControl, RequiredValidator, Validators } from '@angular/forms';
 import { JobApply } from '../models/JobApply';
 import { JobPosition } from '../models/JobPosition';
 import { JobRegion } from '../models/JobRegion';
@@ -14,12 +14,24 @@ import { ApplyNowService } from '../services/apply-now.service';
 
 export class ApplyNowComponent {
     appNowForm = new FormGroup({
-        name: new FormControl(''),
-        phone: new FormControl(''),
-        email: new FormControl(''),
-        position: new FormControl(''),
-        type: new FormControl(''),
-        region: new FormControl(''),
+        name: new FormControl('', [
+            Validators.required
+        ]),
+        phone: new FormControl('', [
+            Validators.required
+        ]),
+        email: new FormControl('', [
+            Validators.required
+        ]),
+        position: new FormControl('', [
+            Validators.required
+        ]),
+        type: new FormControl('', [
+            Validators.required
+        ]),
+        region: new FormControl('', [
+            Validators.required
+        ]),
         addInfo: new FormControl('')
     });
     positions:JobPosition[] = [];
@@ -50,9 +62,9 @@ export class ApplyNowComponent {
             name: '',
             phone: '',
             email: '',
-            position: '-1',
-            type: '-1',
-            region: '-1',
+            position: '',
+            type: '',
+            region: '',
             addInfo: ''
            });
     }
