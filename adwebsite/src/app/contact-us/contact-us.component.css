@@ -1,0 +1,71 @@
+h2 {
+    margin-top: 1.5em;
+}
+
+select, label, input {
+    display: block;
+}
+.contact-page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4em;
+}
+.contact-container select, .contact-container input, .contact-container textarea{
+    border: 2px solid var(--color-s100);
+    border-radius: 5px;
+}
+.email-container{
+    background-color: #dadada;
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.1);
+    margin-bottom: 80px;
+    border-radius: 10px;
+    padding: 2em;
+    
+    
+}
+.label-input {
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+.text-box{
+    display:block;
+    justify-content: left;
+    align-content: center;
+    background-color: white;
+    border-radius: 3px;
+    width:100%;
+    padding: 10px;
+}
+.body-box {
+    max-height:235px;
+    overflow-y: auto;
+}
+.bottom-margin {
+    margin-bottom: 1em;
+}
+.top-margin {
+    margin-top: 1em;
+}
+.text-box p{
+    font-size: 10pt;
+}
+.tight-text {
+    margin:0;
+    padding:0;
+}
+.contact-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-buttons button {
+    margin: .5em 0 .5em 1em;
+    padding: 5px 20px 5px 20px;
+}
+.text-height {
+    height: 20px;
+}
+.callout-color {
+    color: var(--color-p500);
+}

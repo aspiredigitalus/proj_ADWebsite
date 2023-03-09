@@ -17,7 +17,7 @@ const routes: Routes = [
     {path: 'whoweare', component: WhoMasterComponent},
     {path: 'ourthinking', component: OurMasterComponent},
     {path: 'careers', component: CareersMasterComponent},
-    {path: 'contactus', component: ContactUsComponent},
+    {path: 'Contact-Us', component: ContactUsComponent},
     {path: 'SAP-Solutions', component: SapSolutionsComponent},
     {path: 'Apply-Now', component: ApplyNowComponent},
     {path: '**', component: PageNotFoundComponent}
