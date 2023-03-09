@@ -20,6 +20,9 @@ import { WhatMasterComponent } from './what-master/what-master.component';
 import { OurMasterComponent } from './our-master/our-master.component';
 import { CareersMasterComponent } from './careers-master/careers-master.component';
 import { SapSolutionsComponent } from './sap-solutions/sap-solutions.component';
+import { ApplyNowComponent } from './apply-now/apply-now.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +39,7 @@ import { SapSolutionsComponent } from './sap-solutions/sap-solutions.component';
     OurMasterComponent,
     CareersMasterComponent,
     SapSolutionsComponent,
+    ApplyNowComponent,
     
   ],
   imports: [
@@ -46,7 +50,8 @@ import { SapSolutionsComponent } from './sap-solutions/sap-solutions.component';
     MatTabsModule,
     MatButtonModule,
     MatIconModule,
-    NgbModule
+    ReactiveFormsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

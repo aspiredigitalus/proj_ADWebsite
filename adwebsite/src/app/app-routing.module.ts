@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ApplyNowComponent } from './apply-now/apply-now.component';
 import { CareersMasterComponent } from './careers-master/careers-master.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
     {path: 'careers', component: CareersMasterComponent},
     {path: 'contactus', component: ContactUsComponent},
     {path: 'SAP-Solutions', component: SapSolutionsComponent},
+    {path: 'Apply-Now', component: ApplyNowComponent},
     {path: '**', component: PageNotFoundComponent}
 ];
 
