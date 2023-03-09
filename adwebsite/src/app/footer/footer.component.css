@@ -4,3 +4,18 @@
     background-color: var(--color-dark);
 
 }
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". footer-b footer-b .";
+}
+.footer-container div{
+    display: flex;
+    justify-content: center;
+}
+#footer-a{
+    grid-area: footer-a;
+}
+#footer-b{
+    grid-area: footer-b;
+}

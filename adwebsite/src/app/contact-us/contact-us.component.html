@@ -8,6 +8,10 @@
                     <input id="name" type="text" formControlName="name">
                 </div>
                 <div class="label-input">
+                    <label for="name">Company</label>
+                    <input id="name" type="text" formControlName="company">
+                </div>
+                <div class="label-input">
                     <label for="phone">Phone Number <span class="callout-color">*</span></label>
                     <input id="phone" type="text" formControlName="phone">
                 </div>
@@ -16,41 +20,12 @@
                     <input id="email" type="text" formControlName="email">
                 </div>
                 <div class="label-input">
-                    <label for="position">Position <span class="callout-color">*</span></label>
-                    <select type="dropdown" id="position" formControlName="position">
-                        <option value="" default disabled>
-                            Choose
-                        </option>
-                        <option *ngFor="let position of positions" [value]="position.position">
-                            {{position.position}}
-                        </option>
-                    </select>
+                    <label for="subject">Subject <span class="callout-color">*</span></label>
+                    <input id="subject" type="text" formControlName="subject">
                 </div>
                 <div class="label-input">
-                    <label for="type">Type <span class="callout-color">*</span></label>
-                    <select type="dropdown" id="type" type="text" formControlName="type">
-                        <option value="" default disabled>
-                            Choose
-                        </option>
-                        <option *ngFor="let type of types" [value]="type.type">
-                            {{type.type}}
-                        </option>
-                    </select>
-                </div>
-                <div class="label-input">
-                    <label for="region">Region <span class="callout-color">*</span></label>
-                    <select id="region" type="text" formControlName="region">
-                        <option value="" default disabled>
-                            Choose
-                        </option>
-                        <option *ngFor="let region of regions" [value]="region.region">
-                            {{region.region}}
-                        </option>
-                    </select>
-                </div>
-                <div class="label-input">
-                    <label for="addInfo">Additional Information </label>
-                    <textarea id="addInfo" type="text" rows="5" columns="50" formControlName="addInfo"></textarea>
+                    <label for="message">Message <span class="callout-color">*</span></label>
+                    <textarea id="message" type="text" rows="5" columns="50" formControlName="message"></textarea>
                 </div>
                 <div class="contact-buttons">
                     <div>
@@ -74,17 +49,15 @@
                 </div>
                 <h5>Subject:</h5>
                 <div class="text-box bottom-margin">
-                    <p class="tight-text">Looking for a {{ contactUsForm.controls.position.value }} position in {{ contactUsForm.controls.region.value }}</p>
+                    <p class="tight-text text-height">{{ contactUsForm.controls.subject.value }}</p>
                 </div>
                 <h5>Body:</h5>
-                <div class="text-box body-box">
-                    <p class="tight-text">Name: {{ contactUsForm.controls.name.value }}</p>
-                    <p class="tight-text">Phone Number: {{ contactUsForm.controls.phone.value }}</p>
-                    <p class="tight-text">Email: {{ contactUsForm.controls.email.value }}</p>
-                    <p class="tight-text">Position: {{ contactUsForm.controls.position.value }}</p>
-                    <p class="tight-text">Type: {{ contactUsForm.controls.type.value }}</p>
-                    <p class="tight-text">Region: {{ contactUsForm.controls.region.value }}</p>
-                    <p class="tight-text">Additional Information: {{ contactUsForm.controls.addInfo.value }}</p>
+                <div class="text-box body-box" style="min-height:175px;">
+                    <p class="tight-text">{{ contactUsForm.controls.name.value }}</p>
+                    <p class="tight-text">{{ contactUsForm.controls.company.value }}</p>
+                    <p class="tight-text">{{ contactUsForm.controls.phone.value }}</p>
+                    <p class="tight-text">{{ contactUsForm.controls.email.value }}</p>
+                    <p class="tight-text top-margin">{{ contactUsForm.controls.message.value }}</p>
                     
                     <p class="top-margin">Best regards,</p>
                     
@@ -93,9 +66,5 @@
                 
             </div>
         </div>
-        
-        
-        
     </form>
-    
 </div>

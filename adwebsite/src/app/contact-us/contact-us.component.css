@@ -39,14 +39,14 @@ select, label, input {
     padding: 10px;
 }
 .body-box {
-    max-height:235px;
+    height:235px;
     overflow-y: auto;
 }
 .bottom-margin {
     margin-bottom: 1em;
 }
 .top-margin {
-    margin-top: 1em;
+    margin-top: 1em !important;
 }
 .text-box p{
     font-size: 10pt;

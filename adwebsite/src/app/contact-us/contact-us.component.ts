@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, RequiredValidator, Validators } from '@angular/forms';
-import { JobApply } from '../models/JobApply';
-import { JobPosition } from '../models/JobPosition';
-import { JobRegion } from '../models/JobRegion';
-import { JobType } from '../models/JobType';
+import { ContactUs } from '../models/ContactUs';
 import { ApplyNowService } from '../services/apply-now.service';
 
 @Component({
@@ -16,55 +13,44 @@ export class ContactUsComponent {
         name: new FormControl('', [
             Validators.required
         ]),
+        company: new FormControl('',),
         phone: new FormControl('', [
             Validators.required
         ]),
         email: new FormControl('', [
             Validators.required
         ]),
-        position: new FormControl('', [
+        subject: new FormControl('', [
             Validators.required
         ]),
-        type: new FormControl('', [
+        message: new FormControl('', [
             Validators.required
-        ]),
-        region: new FormControl('', [
-            Validators.required
-        ]),
-        addInfo: new FormControl('')
+        ])
     });
-    positions:JobPosition[] = [];
-    regions:JobRegion[] = [];
-    types:JobType[] = [];
-    app:JobApply;
+    contact:ContactUs;
     constructor(private appService: ApplyNowService) {
-        this.positions = appService.getPositions();
-        this.regions = appService.getRegions();
-        this.types = appService.getTypes();
-        this.app = new JobApply();
+        this.contact = new ContactUs();
     }
 
     onSubmit(){ 
-        this.app.setName(this.contactUsForm.controls.name.value!);
-        this.app.setEmail(this.contactUsForm.controls.email.value!);
-        this.app.setPhone(this.contactUsForm.controls.phone.value!);
-        this.app.setPosition(this.contactUsForm.controls.position.value!);
-        this.app.setType(this.contactUsForm.controls.type.value!);
-        this.app.setRegion(this.contactUsForm.controls.region.value!);
-        if(this.contactUsForm.controls.region.value!=null){
-            this.app.setAddInfo(this.contactUsForm.controls.addInfo.value!);
+        this.contact.setName(this.contactUsForm.controls.name.value!);
+        if(this.contactUsForm.controls.company.value!=null){
+            this.contact.setCompany(this.contactUsForm.controls.company.value);
         }
-        console.log(this.app);
+        this.contact.setEmail(this.contactUsForm.controls.email.value!);
+        this.contact.setPhone(this.contactUsForm.controls.phone.value!);
+        this.contact.setSubject(this.contactUsForm.controls.subject.value!);
+        this.contact.setMessage(this.contactUsForm.controls.message.value!);
+        console.log(this.contact);
     }
     isReset(){
         this.contactUsForm.reset({
             name: '',
+            company: '',
             phone: '',
             email: '',
-            position: '',
-            type: '',
-            region: '',
-            addInfo: ''
+            subject: '',
+            message: ''
            });
     }
 }
