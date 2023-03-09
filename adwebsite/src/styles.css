@@ -169,6 +169,10 @@ a {
     background-color: var(--color-p700);
     color: var(--color-s50);
 }
+.ad-btn-primary:disabled {
+    background-color: var(--color-s200);
+    color: var(--color-s50);
+}
 
 i {
     color: inherit;

@@ -57,7 +57,7 @@ select, label, input {
 }
 .apply-buttons {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
 }
 .apply-buttons button {
     margin: .5em 0 .5em 1em;
@@ -65,4 +65,7 @@ select, label, input {
 }
 .text-height {
     height: 20px;
+}
+.callout-color {
+    color: var(--color-p500);
 }

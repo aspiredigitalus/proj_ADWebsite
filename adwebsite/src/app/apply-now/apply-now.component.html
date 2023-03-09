@@ -4,21 +4,21 @@
         <div class="application-page-container">
             <div class="application-container">
                 <div class="label-input">
-                    <label for="name">Name</label>
+                    <label for="name">Name <span class="callout-color">*</span></label>
                     <input id="name" type="text" formControlName="name">
                 </div>
                 <div class="label-input">
-                    <label for="phone">Phone Number</label>
+                    <label for="phone">Phone Number <span class="callout-color">*</span></label>
                     <input id="phone" type="text" formControlName="phone">
                 </div>
                 <div class="label-input">
-                    <label for="email">Email</label>
+                    <label for="email">Email <span class="callout-color">*</span></label>
                     <input id="email" type="text" formControlName="email">
                 </div>
                 <div class="label-input">
-                    <label for="position">Position</label>
+                    <label for="position">Position <span class="callout-color">*</span></label>
                     <select type="dropdown" id="position" formControlName="position">
-                        <option value="-1" default disabled>
+                        <option value="" default disabled>
                             Choose
                         </option>
                         <option *ngFor="let position of positions" [value]="position.position">
@@ -27,9 +27,9 @@
                     </select>
                 </div>
                 <div class="label-input">
-                    <label for="type">Type</label>
+                    <label for="type">Type <span class="callout-color">*</span></label>
                     <select type="dropdown" id="type" type="text" formControlName="type">
-                        <option value="-1" default disabled>
+                        <option value="" default disabled>
                             Choose
                         </option>
                         <option *ngFor="let type of types" [value]="type.type">
@@ -38,9 +38,9 @@
                     </select>
                 </div>
                 <div class="label-input">
-                    <label for="region">Region</label>
+                    <label for="region">Region <span class="callout-color">*</span></label>
                     <select id="region" type="text" formControlName="region">
-                        <option value="-1" default disabled>
+                        <option value="" default disabled>
                             Choose
                         </option>
                         <option *ngFor="let region of regions" [value]="region.region">
@@ -49,12 +49,18 @@
                     </select>
                 </div>
                 <div class="label-input">
-                    <label for="addInfo">Additional Information</label>
+                    <label for="addInfo">Additional Information </label>
                     <textarea id="addInfo" type="text" rows="5" columns="50" formControlName="addInfo"></textarea>
                 </div>
                 <div class="apply-buttons">
-                    <button (click)="isReset()" class="ad-btn ad-btn-primary">Reset</button>
-                    <button type="submit" class="ad-btn ad-btn-primary">Submit</button>
+                    <div>
+                        <p><span class="callout-color">* </span>Required Field</p>
+                    </div>
+                    <div>
+                        <button (click)="isReset()" class="ad-btn ad-btn-primary">Reset</button>
+                        <button [disabled]="appNowForm.invalid" type="submit" class="ad-btn ad-btn-primary">Submit</button>
+                    </div>
+                    
                 </div>
             </div>
             <div class="email-container">
