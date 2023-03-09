@@ -1,0 +1,16 @@
+.icon-color {
+    color: var(--color-s200);
+}
+.icon-color:hover {
+    color: var(--color-p500);
+    cursor:pointer;
+}
+.icon-size {
+    font-size: 36pt;
+}
+.link-location {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}

@@ -22,6 +22,7 @@ import { CareersMasterComponent } from './careers-master/careers-master.componen
 import { SapSolutionsComponent } from './sap-solutions/sap-solutions.component';
 import { ApplyNowComponent } from './apply-now/apply-now.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CareersMasterComponent,
     SapSolutionsComponent,
     ApplyNowComponent,
+    TopOfPageComponent,
     
   ],
   imports: [
