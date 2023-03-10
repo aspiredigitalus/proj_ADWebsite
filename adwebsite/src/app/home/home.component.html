@@ -1,18 +1,38 @@
-<div class="container">
-    <mat-tab-group mat-stretch-tabs="true" animationDuration="500ms">
-        <mat-tab label="Home">
-            <welcome></welcome>
-        </mat-tab>
-        <mat-tab label="Palette">
-            <palette></palette>
-        </mat-tab>
-        <mat-tab label="Body">
-            <blank-body></blank-body>
-        </mat-tab>
-        <mat-tab label="Buttons">
-            <buttons></buttons>
-        </mat-tab>
-    
-    </mat-tab-group>
-</div>
-
+<section id="home">
+    <div class="container_home">
+        <div class="home_background">
+            <div class="container slogan_container">
+                <div class="slogan">
+                    <h2>Our Customer Experience</h2>
+                    <p>With agility in process and integrity with resolve, 
+                        <br>we provide mastery of product.
+                    </p>
+                </div>
+                <div class="slogan_link">
+                    <a [routerLink]="['']" fragment="what_we_do_section" class="ad-btn ad-btn-primary">Find Out More <i class="bi bi-plus-circle-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="img-layer">
+            <img src="assets/media/Lines-PNG-Free-Image.png" class="rotate"/>
+        </div>
+    </div>
+</section>
+<section id="what_we_do_section">
+    <div id="header_what">
+        <h3>What We Do</h3>
+    </div>
+    <what-master></what-master>
+</section>
+<section id="who_we_are_section">
+    <div id="header_who">
+        <h3>Who We Are</h3>
+    </div>
+    <who-master></who-master>
+</section>
+<section id="our_thinking_section">
+    <div id="header_our">
+        <h3>Our Thinking</h3>
+    </div>
+    <our-master></our-master>
+</section>

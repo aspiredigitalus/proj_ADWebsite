@@ -1,5 +1,98 @@
-<div class="size color border container-fluid">
-    <a (click)="onClick()">
-        <img src="../../assets/media/logo.png" alt="Logo" width="270" class="logo">
-    </a>
+<div id="top-of-page"></div>
+<div class="header_container">
+    
+    <div class="logo">
+        <a [routerLink]="['home']"><img src="assets/media/logo.png" width="250"/></a>
+    </div>
+    <div class="nav-bar">
+        <ul class="nav-bar-list">
+            <li class="nav_bar_links nav-link" id="what_we_do"><a [routerLink]="['whatwedo']"><h5>What We Do</h5></a>
+                <div class="nav_dropdown menu_what_we_do">
+                    <div class="triangle" style="left:150px;"></div>
+                    <div class="box">
+                        <div class="menu-box menu-box-what">
+                            <div>
+                                <h3 class="menu-header">SAP Solutions</h3>
+                                <p class="menu-item">C4C - Cloud for Customer</p>
+                                <p class="menu-item">CPQ - Configure Price Quote</p>
+                                <p class="menu-item">Sales Performance Management</p>
+                            </div>
+                            <div>
+                                <h3 class="menu-header">Digital Services</h3>
+                                <p class="menu-item">Web Development</p>
+                                <p class="menu-item">Digital Marketing</p>
+                                <p class="menu-item">Scalability Planning</p>
+                            </div>
+                            <div>
+                                <h3 class="menu-header">Industries</h3>
+                                <p class="menu-item">Telecommunication</p>
+                                <p class="menu-item">Industrial</p>
+                                <p class="menu-item">Manufacturing</p>
+                                <p class="menu-item">Medical</p>
+                                <p class="menu-item">Agriculture</p>
+                                <p class="menu-item">Technology</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav_bar_links nav-link" id="who_we_are"><a [routerLink]="['whoweare']"><h5>Who We Are</h5></a>
+                <div class="nav_dropdown menu_who_we_are">
+                    <div class="triangle" style="left:150px;"></div>
+                    <div class="box">
+                        <div class="menu-box menu-box-who">
+                            <div>
+                                <h3 class="menu-header">Consultants</h3>
+                                <p class="menu-item">The Process</p>
+                                <p class="menu-item">Money Savings</p>
+                                <p class="menu-item">Time Savings</p>
+                            </div>
+                            <div style="display:flex; flex-direction: column; justify-content: space-between;">
+                                <h3 class="menu-header">Our Staff</h3>
+                                <h3 class="menu-header">Locations</h3>
+                                <a [routerLink]="['Contact-Us']"><h3 class="menu-header">Contact Us</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav_bar_links nav-link" id="our_thinking"><a [routerLink]="['ourthinking']"><h5>Our Thinking</h5></a>
+                <div class="nav_dropdown menu_our_thinking">
+                    <div class="triangle" style="left:120px;"></div>
+                    <div class="box">
+                        <div class="menu-box menu-box-our">
+                            <div>
+                                <h3 class="menu-header">Diversity</h3>
+                                <h3 class="menu-header">Our Pledge</h3>
+                                <h3 class="menu-header">Mission Statement</h3>
+                                <h3 class="menu-header">Cloud Central Design</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav_bar_links nav-link" id="careers"><a [routerLink]="['careers']"><h5>Careers</h5></a>
+                <div class="nav_dropdown menu_careers">
+                    <div class="triangle" style="left:70px;"></div>
+                    <div class="box">
+                        <div class="menu-box menu-box-careers">
+                            <div>
+                                <h3 class="menu-header">Culture</h3>
+                                <h3 class="menu-header">Openings</h3>
+                                <a [routerLink]="['Apply-Now']"><h3 class="menu-header">Apply Now</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="language">
+        <i class="bi bi-facebook" style="color: var(--color-p500)"></i>
+        <a href="https://www.linkedin.com/company/aspire-digital-technologies" target="_blank"><i class="bi bi-linkedin" style="color: var(--color-p500)"></i></a>
+        <select>
+            <option>English</option>
+        </select>
+    </div>
 </div>

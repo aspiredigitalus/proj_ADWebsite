@@ -1,0 +1,101 @@
+<div class="container">
+    <h2>Apply Now</h2>
+    <form [formGroup]="appNowForm" (ngSubmit)="onSubmit()">
+        <div class="application-page-container">
+            <div class="application-container">
+                <div class="label-input">
+                    <label for="name">Name <span class="callout-color">*</span></label>
+                    <input id="name" type="text" formControlName="name">
+                </div>
+                <div class="label-input">
+                    <label for="phone">Phone Number <span class="callout-color">*</span></label>
+                    <input id="phone" type="text" formControlName="phone">
+                </div>
+                <div class="label-input">
+                    <label for="email">Email <span class="callout-color">*</span></label>
+                    <input id="email" type="text" formControlName="email">
+                </div>
+                <div class="label-input">
+                    <label for="position">Position <span class="callout-color">*</span></label>
+                    <select type="dropdown" id="position" formControlName="position">
+                        <option value="" default disabled>
+                            Choose
+                        </option>
+                        <option *ngFor="let position of positions" [value]="position.position">
+                            {{position.position}}
+                        </option>
+                    </select>
+                </div>
+                <div class="label-input">
+                    <label for="type">Type <span class="callout-color">*</span></label>
+                    <select type="dropdown" id="type" type="text" formControlName="type">
+                        <option value="" default disabled>
+                            Choose
+                        </option>
+                        <option *ngFor="let type of types" [value]="type.type">
+                            {{type.type}}
+                        </option>
+                    </select>
+                </div>
+                <div class="label-input">
+                    <label for="region">Region <span class="callout-color">*</span></label>
+                    <select id="region" type="text" formControlName="region">
+                        <option value="" default disabled>
+                            Choose
+                        </option>
+                        <option *ngFor="let region of regions" [value]="region.region">
+                            {{region.region}}
+                        </option>
+                    </select>
+                </div>
+                <div class="label-input">
+                    <label for="addInfo">Additional Information </label>
+                    <textarea id="addInfo" type="text" rows="5" columns="50" formControlName="addInfo"></textarea>
+                </div>
+                <div class="apply-buttons">
+                    <div>
+                        <p><span class="callout-color">* </span>Required Field</p>
+                    </div>
+                    <div>
+                        <button (click)="isReset()" class="ad-btn ad-btn-primary">Reset</button>
+                        <button [disabled]="appNowForm.invalid" type="submit" class="ad-btn ad-btn-primary">Submit</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="email-container">
+                <h5>To:</h5>
+                <div class="text-box bottom-margin">
+                    <p class="tight-text">Aspire Digital Management</p>
+                </div>
+                <h5>From:</h5>
+                <div class="text-box bottom-margin">
+                    <p class="tight-text text-height">{{ appNowForm.controls.email.value }}</p>
+                </div>
+                <h5>Subject:</h5>
+                <div class="text-box bottom-margin">
+                    <p class="tight-text">Looking for a {{ appNowForm.controls.position.value }} position in {{ appNowForm.controls.region.value }}</p>
+                </div>
+                <h5>Body:</h5>
+                <div class="text-box body-box">
+                    <p class="tight-text">Name: {{ appNowForm.controls.name.value }}</p>
+                    <p class="tight-text">Phone Number: {{ appNowForm.controls.phone.value }}</p>
+                    <p class="tight-text">Email: {{ appNowForm.controls.email.value }}</p>
+                    <p class="tight-text">Position: {{ appNowForm.controls.position.value }}</p>
+                    <p class="tight-text">Type: {{ appNowForm.controls.type.value }}</p>
+                    <p class="tight-text">Region: {{ appNowForm.controls.region.value }}</p>
+                    <p class="tight-text">Additional Information: {{ appNowForm.controls.addInfo.value }}</p>
+                    
+                    <p class="top-margin">Best regards,</p>
+                    
+                    <p class="top-margin">{{ appNowForm.controls.name.value }}</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        
+    </form>
+    
+</div>

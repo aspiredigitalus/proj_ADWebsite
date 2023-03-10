@@ -5,12 +5,12 @@ h2 {
 select, label, input {
     display: block;
 }
-.contact-page-container {
+.application-page-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 4em;
 }
-.contact-container select, .contact-container input, .contact-container textarea{
+.application-container select, .application-container input, .application-container textarea{
     border: 2px solid var(--color-s100);
     border-radius: 5px;
 }
@@ -39,14 +39,14 @@ select, label, input {
     padding: 10px;
 }
 .body-box {
-    height:235px;
+    max-height:235px;
     overflow-y: auto;
 }
 .bottom-margin {
     margin-bottom: 1em;
 }
 .top-margin {
-    margin-top: 1em !important;
+    margin-top: 1em;
 }
 .text-box p{
     font-size: 10pt;
@@ -55,11 +55,11 @@ select, label, input {
     margin:0;
     padding:0;
 }
-.contact-buttons {
+.apply-buttons {
     display: flex;
     justify-content: space-between;
 }
-.contact-buttons button {
+.apply-buttons button {
     margin: .5em 0 .5em 1em;
     padding: 5px 20px 5px 20px;
 }

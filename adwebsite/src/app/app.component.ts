@@ -1,4 +1,6 @@
 import { Component, HostListener } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,26 +9,20 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'adwebsite';
-  element_1:any;
-  element_2:any;
-  constructor() {
-    
+  urlSnippet:string = '';
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+    router.events.pipe(
+        filter((event): event is NavigationEnd => event instanceof NavigationEnd)
+    ).subscribe((event) => {
+    let urlSnippet = event.url;
+    let charIndex = urlSnippet.indexOf("#");
+    if(charIndex != -1){
+        urlSnippet = urlSnippet.substring(0,charIndex);
+    }
+    this.urlSnippet = urlSnippet;
+    console.log(this.urlSnippet);
+    });
   }
 
-  
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(e:Event) {
-    let element_1 = document.getElementById('navbar_1');
-    let element_2 = document.getElementById('navbar_2');
-    if (window.scrollY > 150) {
-       element_1?.classList.add('outrange');
-       element_2?.classList.add('fixed');
-       console.log('ON');
-     } else {
-        element_1?.classList.remove('outrange');
-        element_2?.classList.remove('fixed');
-        console.log('OFF');
-     }
-  }
 }

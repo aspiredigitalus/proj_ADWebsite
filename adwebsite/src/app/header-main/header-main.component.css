@@ -1,9 +1,190 @@
-.color {
-    background: rgb(255,255,255);
-    background: linear-gradient(135deg, var(--color-background) 33%, var(--color-primary) 91%, var(--color-primary) 100%);
+h3 {
+    margin:0;
+    font-size: 16pt;
 }
+a {
+    text-decoration: none;
+}
+h5 {
+    margin:0;
+    display: block;
+}
+
+ul {
+    padding:0;
+    margin:0;
+}
+
 .logo {
-    margin-top: 10px;
-    margin-left: 5px;
+    padding: 7px;
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: 265px 6fr 1fr;
+    border-bottom: 2px solid #999999;
+    opacity: 100%;
+}
+.nav-bar h5, .nav-bar a {
+    font-size: 16px;
+    align-self: center;
+}
+/************* NAV BAR ************/
+.nav-bar {
+    height: 100%;
+    margin-left: 5em;
+    display: flex;
+    align-items: end;
+    margin-bottom: 21px;
+}
+.nav-bar-list{
+    height: 100%;
+}
+.nav_bar_links {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: left;
+    align-self:baseline;
+    margin-right: 1.5em;
+    height:100%;
+}
+.nav-link {
+    border-bottom: 3px solid transperant;
+    padding: .2em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: content-box;
+}
+.nav-link:hover {
     cursor: pointer;
 }
+.menu-box{
+    padding: 2em;
+}
+.menu-header {
+    margin-bottom: .5em;
+}
+.menu-header:hover{
+    transform: scale(1.02);
+}
+
+.menu-item {
+    padding-left:10px;
+    filter:brightness(.8);
+    color: var(--color-p900);
+}
+.menu-item:hover {
+    transform: scale(1.02);
+}
+
+.box {
+    background-color: rgba(255,255,255,.96);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--color-s50);
+    box-shadow: 3px 3px 10px rgba(0,0,0,.1);
+}
+
+.nav_dropdown {
+    position:absolute;
+    z-index: 100;
+    opacity: 100;
+    overflow: visible;
+}
+
+        /********* what we do *********/
+        .menu_what_we_do {
+            display: none;
+            left: 220px;
+            padding: .3em;
+            top: 77px;
+            opacity:0%;    
+        }
+        #what_we_do:hover .menu_what_we_do {
+            display: block;
+            opacity:100%;
+            top:85px;
+        }
+        .menu-box-what {
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            column-gap: 30px;
+        }
+
+        /********* who we are *********/
+        .menu_who_we_are{
+            display: none;
+            left: 350px;
+            padding: .3em;
+            top: 77px;
+            opacity:0%;    
+        }
+        #who_we_are:hover .menu_who_we_are {
+            display: block;
+            opacity:100%;
+            top:85px;
+        }
+        .menu-box-who {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+        }
+        /********* Our Thinking *********/
+        .menu_our_thinking{
+            display: none;
+            left: 510px;
+            padding: .3em;
+            top: 77px;
+            opacity:0%;    
+        }
+        #our_thinking:hover .menu_our_thinking {
+            display: block;
+            opacity:100%;
+            top:85px;
+        }
+        .menu-box-our {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 30px;
+        }
+        /********* Careers *********/
+        .menu_careers{
+            display: none;
+            left: 670px;
+            padding: .3em;
+            top: 77px;
+            opacity:0%;    
+        }
+        #careers:hover .menu_careers {
+            display: block;
+            opacity:100%;
+            top:85px;
+        }
+        .menu-box-careers {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 30px;
+        }
+/*****************************************/
+.language {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-bottom: 21px;
+    margin-right: 15px;
+}
+
+
+.triangle {
+    position:absolute;
+    top: -15px;
+    opacity:100;
+    border-bottom: 20px solid var(--color-s100);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height:0;
+    width:0;
+}
+
+

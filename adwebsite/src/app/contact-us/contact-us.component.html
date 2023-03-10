@@ -1,4 +1,70 @@
 <div class="container">
-    <h1>Contact US</h1>
+    <h2>Contact Us</h2>
+    <form [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
+        <div class="contact-page-container">
+            <div class="contact-container">
+                <div class="label-input">
+                    <label for="name">Name <span class="callout-color">*</span></label>
+                    <input id="name" type="text" formControlName="name">
+                </div>
+                <div class="label-input">
+                    <label for="name">Company</label>
+                    <input id="name" type="text" formControlName="company">
+                </div>
+                <div class="label-input">
+                    <label for="phone">Phone Number <span class="callout-color">*</span></label>
+                    <input id="phone" type="text" formControlName="phone">
+                </div>
+                <div class="label-input">
+                    <label for="email">Email <span class="callout-color">*</span></label>
+                    <input id="email" type="text" formControlName="email">
+                </div>
+                <div class="label-input">
+                    <label for="subject">Subject <span class="callout-color">*</span></label>
+                    <input id="subject" type="text" formControlName="subject">
+                </div>
+                <div class="label-input">
+                    <label for="message">Message <span class="callout-color">*</span></label>
+                    <textarea id="message" type="text" rows="5" columns="50" formControlName="message"></textarea>
+                </div>
+                <div class="contact-buttons">
+                    <div>
+                        <p><span class="callout-color">* </span>Required Field</p>
+                    </div>
+                    <div>
+                        <button (click)="isReset()" class="ad-btn ad-btn-primary">Reset</button>
+                        <button [disabled]="contactUsForm.invalid" type="submit" class="ad-btn ad-btn-primary">Submit</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="email-container">
+                <h5>To:</h5>
+                <div class="text-box bottom-margin">
+                    <p class="tight-text">Aspire Digital Management</p>
+                </div>
+                <h5>From:</h5>
+                <div class="text-box bottom-margin">
+                    <p class="tight-text text-height">{{ contactUsForm.controls.email.value }}</p>
+                </div>
+                <h5>Subject:</h5>
+                <div class="text-box bottom-margin">
+                    <p class="tight-text text-height">{{ contactUsForm.controls.subject.value }}</p>
+                </div>
+                <h5>Body:</h5>
+                <div class="text-box body-box" style="min-height:175px;">
+                    <p class="tight-text">{{ contactUsForm.controls.name.value }}</p>
+                    <p class="tight-text">{{ contactUsForm.controls.company.value }}</p>
+                    <p class="tight-text">{{ contactUsForm.controls.phone.value }}</p>
+                    <p class="tight-text">{{ contactUsForm.controls.email.value }}</p>
+                    <p class="tight-text top-margin">{{ contactUsForm.controls.message.value }}</p>
+                    
+                    <p class="top-margin">Best regards,</p>
+                    
+                    <p class="top-margin">{{ contactUsForm.controls.name.value }}</p>
+                </div>
+                
+            </div>
+        </div>
+    </form>
 </div>
-

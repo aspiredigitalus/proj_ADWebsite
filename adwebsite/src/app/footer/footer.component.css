@@ -1,6 +1,51 @@
+p,  h5 {
+    color: var(--color-s50);
+
+}
+p {
+    margin-bottom: 3px;
+}
+a {
+    text-decoration: none;
+}
 .design {
     min-height: 200px;
     width: 100%;
-    background-color: var(--color-secondary);
-
+    background-color: var(--color-dark);
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". footer-logo footer-logo ."
+        "footer-what footer-who footer-our footer-careers"
+        ". footer-copyright footer-copyright .";
+    margin-top: 2em;
+    row-gap: 2em;
+}
+.footer-container div{
+    display: flex;
+    justify-content: center;
+}
+#footer-logo{
+    margin-top: 2em;
+    grid-area: footer-logo;
+}
+#footer-what{
+    grid-area: footer-what;
+}
+#footer-who{
+    grid-area: footer-who;
+}
+#footer-our{
+    grid-area: footer-our;
+}
+#footer-careers{
+    grid-area: footer-careers;
+}
+#footer-copyright{
+    grid-area: footer-copyright;
+}
+.on-hover:hover{
+    color: var(--color-p500);
 }

@@ -1,13 +1,12 @@
-<div id="body-container">
+<div class="main_container">
+    <top-of-page [urlSnippet]="urlSnippet"></top-of-page>
     <header-main></header-main>
-    <main id="main">
+
+    <main class="main">
         <router-outlet></router-outlet>
     </main>
+    
     <footer></footer>
-    <div class="menu-container">
-        <button mat-stroked-button color="primary" class="menu-button" [routerLink]="['/home']">Home</button>
-        <button mat-stroked-button color="primary" class="menu-button" [routerLink]="['/contact-us']">Contact</button>
-    </div>
 </div>
 
 
