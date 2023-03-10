@@ -16,6 +16,7 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderMainComponent } from './header-main/header-main.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactButtonComponent } from './contact-button/contact-button.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     ButtonsComponent,
     HeaderMainComponent,
     ContactUsComponent,
+    ContactButtonComponent,
     
   ],
   imports: [
