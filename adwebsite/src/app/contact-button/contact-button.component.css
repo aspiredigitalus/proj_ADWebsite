@@ -1,0 +1,15 @@
+.button-style{
+    background-color: var(--color-p500);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+.button-style h3{
+    margin:0;
+}
+.font-style {
+    color: white;
+}
+.button-location {
+    position: sticky;
+    bottom: 20px;
+}

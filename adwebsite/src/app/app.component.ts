@@ -10,6 +10,7 @@ import { filter } from 'rxjs';
 export class AppComponent {
   title = 'adwebsite';
   urlSnippet:string = '';
+  
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
     router.events.pipe(
         filter((event): event is NavigationEnd => event instanceof NavigationEnd)
