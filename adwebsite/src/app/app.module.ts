@@ -25,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 
 import { ContactButtonComponent } from './contact-button/contact-button.component';
+import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
     ApplyNowComponent,
     TopOfPageComponent,
     ContactButtonComponent,
+    CloudForCustomerComponent,
     
   ],
   imports: [
