@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ApplyNowComponent } from './apply-now/apply-now.component';
 import { CareersMasterComponent } from './careers-master/careers-master.component';
+import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { OurMasterComponent } from './our-master/our-master.component';
@@ -20,7 +21,8 @@ const routes: Routes = [
     {path: 'Contact-Us', component: ContactUsComponent},
     {path: 'SAP-Solutions', component: SapSolutionsComponent},
     {path: 'Apply-Now', component: ApplyNowComponent},
-    {path: '**', component: PageNotFoundComponent}
+    {path: 'CloudForCustomer', component: CloudForCustomerComponent},
+    {path: '**', component: PageNotFoundComponent},
 ];
 
 @NgModule({
