@@ -26,6 +26,7 @@ import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
+import { LocationsComponent } from './locations/locations.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-custom
     TopOfPageComponent,
     ContactButtonComponent,
     CloudForCustomerComponent,
+    LocationsComponent,
     
   ],
   imports: [
