@@ -1,3 +1,7 @@
+i {
+    padding:0;
+    margin:0;
+}
 .icon-color {
     color: var(--color-s200);
 }
@@ -10,7 +14,8 @@
 }
 .link-location {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     z-index: 1000;
+    height: 58px;
 }
