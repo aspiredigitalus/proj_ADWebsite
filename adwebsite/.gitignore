@@ -5,7 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
-adwebsite/dist/adwebsite/web.config
+dist/adwebsite/web.config
 
 # Node
 /node_modules
