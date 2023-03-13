@@ -1,0 +1,36 @@
+a {
+    text-decoration: none;
+}
+.employee-card-container{
+    transition: all 1s ease-in-out;
+}
+
+.headshot{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom:1em;
+}
+.name{
+    display: block;
+    margin:0;
+    padding:0;
+}
+.jobTitle{
+    display: block;
+    margin:0;
+    padding:0;
+}
+.link-icon{
+    color: var(--color-p500);
+    font-size: 26px;
+    display: block;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+}

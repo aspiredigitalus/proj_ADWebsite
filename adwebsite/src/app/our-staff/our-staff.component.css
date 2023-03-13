@@ -1,0 +1,24 @@
+h3 {
+    margin:0;
+    padding:0;
+}
+.staff-title-container {
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3em;
+    margin-bottom: 5em;
+}
+.staff-title-container h3{
+    text-align: center;
+    margin-bottom:2px;
+}
+.staff-tab {
+    cursor: pointer;
+}
+.tab-on {
+    border-bottom: 4px solid var(--color-p200);
+}
+.tab-off {
+    border-bottom: none;
+}
