@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AgricultureComponent } from './agriculture/agriculture.component';
 import { ApplyNowComponent } from './apply-now/apply-now.component';
 import { CareersMasterComponent } from './careers-master/careers-master.component';
 import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
@@ -45,6 +46,7 @@ const routes: Routes = [
     {path: 'Industrial', component: IndustrialComponent},
     {path: 'Manufacturing', component: ManufacturingComponent},
     {path: 'Medical', component: MedicalComponent},
+    {path: 'Agriculture', component: AgricultureComponent},
     {path: 'Locations', component: LocationsComponent},
     {path: '**', component: PageNotFoundComponent}
 ];
