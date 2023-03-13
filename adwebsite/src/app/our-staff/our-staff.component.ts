@@ -24,6 +24,8 @@ export class OurStaffComponent implements OnInit {
         this.usaId = document.getElementById('usa');
         this.indiaId = document.getElementById('india');
 
+        //this.router.events.subscribe(event => console.log(event));
+
         this.router.events.pipe(
             filter((event): event is Scroll => event instanceof Scroll)
         ).subscribe((event) => {
@@ -32,16 +34,18 @@ export class OurStaffComponent implements OnInit {
                 this.managementId?.classList.add('tab-on')
                 this.usaId?.classList.remove('tab-on')
                 this.indiaId?.classList.remove('tab-on')
-            }
-            if(urlSnippet.search('USA') != -1){
+            } else if(urlSnippet.search('USA') != -1){
                 this.usaId?.classList.add('tab-on')
                 this.managementId?.classList.remove('tab-on')
                 this.indiaId?.classList.remove('tab-on')
-            }
-            if(urlSnippet.search('India') != -1){
+            }else if(urlSnippet.search('India') != -1){
                 this.indiaId?.classList.add('tab-on')
                 this.managementId?.classList.remove('tab-on')
                 this.usaId?.classList.remove('tab-on')
+            }else {
+                this.managementId?.classList.add('tab-on')
+                this.usaId?.classList.remove('tab-on')
+                this.indiaId?.classList.remove('tab-on')
             }
         });
     }
