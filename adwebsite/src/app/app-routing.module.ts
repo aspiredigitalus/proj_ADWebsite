@@ -9,6 +9,7 @@ import { DigitalMarketingComponent } from './digital-marketing/digital-marketing
 import { DigitalServicesComponent } from './digital-services/digital-services.component';
 import { HomeComponent } from './home/home.component';
 import { LocationsComponent } from './locations/locations.component';
+import { OurIndustriesComponent } from './our-industries/our-industries.component';
 import { OurMasterComponent } from './our-master/our-master.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SalesPerformanceManagementComponent } from './sales-performance-management/sales-performance-management.component';
@@ -35,6 +36,7 @@ const routes: Routes = [
     {path: 'WebDev', component: WebDevelopmentComponent},
     {path: 'DigitalMarketing', component: DigitalMarketingComponent},
     {path: 'ScalePlanning', component: ScalePlanningComponent},
+    {path: 'Industries', component: OurIndustriesComponent},
     {path: 'Locations', component: LocationsComponent},
     {path: '**', component: PageNotFoundComponent}
 ];

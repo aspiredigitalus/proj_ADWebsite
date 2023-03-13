@@ -33,6 +33,7 @@ import { DigitalServicesComponent } from './digital-services/digital-services.co
 import { WebDevelopmentComponent } from './web-development/web-development.component';
 import { ScalePlanningComponent } from './scale-planning/scale-planning.component';
 import { DigitalMarketingComponent } from './digital-marketing/digital-marketing.component';
+import { OurIndustriesComponent } from './our-industries/our-industries.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { DigitalMarketingComponent } from './digital-marketing/digital-marketing
     WebDevelopmentComponent,
     ScalePlanningComponent,
     DigitalMarketingComponent,
+    OurIndustriesComponent,
     
   ],
   imports: [
