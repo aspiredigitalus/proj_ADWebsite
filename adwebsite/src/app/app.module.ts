@@ -40,6 +40,7 @@ import { ManufacturingComponent } from './manufacturing/manufacturing.component'
 import { MedicalComponent } from './medical/medical.component';
 import { AgricultureComponent } from './agriculture/agriculture.component';
 import { TechnologyComponent } from './technology/technology.component';
+import { ConsultantsComponent } from './consultants/consultants.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +75,7 @@ import { TechnologyComponent } from './technology/technology.component';
     MedicalComponent,
     AgricultureComponent,
     TechnologyComponent,
+    ConsultantsComponent,
     
   ],
   imports: [

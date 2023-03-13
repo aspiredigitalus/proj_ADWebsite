@@ -5,6 +5,7 @@ import { ApplyNowComponent } from './apply-now/apply-now.component';
 import { CareersMasterComponent } from './careers-master/careers-master.component';
 import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
 import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-price-quote.component';
+import { ConsultantsComponent } from './consultants/consultants.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { DigitalMarketingComponent } from './digital-marketing/digital-marketing.component';
 import { DigitalServicesComponent } from './digital-services/digital-services.component';
@@ -49,6 +50,7 @@ const routes: Routes = [
     {path: 'Medical', component: MedicalComponent},
     {path: 'Agriculture', component: AgricultureComponent},
     {path: 'Technology', component: TechnologyComponent},
+    {path: 'Consultants', component: ConsultantsComponent},
     {path: 'Locations', component: LocationsComponent},
     {path: '**', component: PageNotFoundComponent}
 ];
