@@ -5,6 +5,7 @@ import { CareersMasterComponent } from './careers-master/careers-master.componen
 import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
 import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-price-quote.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { DigitalServicesComponent } from './digital-services/digital-services.component';
 import { HomeComponent } from './home/home.component';
 import { LocationsComponent } from './locations/locations.component';
 import { OurMasterComponent } from './our-master/our-master.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
     {path: 'CloudForCustomer', component: CloudForCustomerComponent},
     {path: 'ConfigurePriceQuote', component: ConfigurePriceQuoteComponent},
     {path: 'SalesPerformanceManagement', component: SalesPerformanceManagementComponent},
+    {path: 'DigitalServices', component: DigitalServicesComponent},
     {path: 'Locations', component: LocationsComponent},
     {path: '**', component: PageNotFoundComponent}
 ];

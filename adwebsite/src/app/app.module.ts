@@ -29,6 +29,7 @@ import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-custom
 import { LocationsComponent } from './locations/locations.component';
 import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-price-quote.component';
 import { SalesPerformanceManagementComponent } from './sales-performance-management/sales-performance-management.component';
+import { DigitalServicesComponent } from './digital-services/digital-services.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { SalesPerformanceManagementComponent } from './sales-performance-managem
     LocationsComponent,
     ConfigurePriceQuoteComponent,
     SalesPerformanceManagementComponent,
+    DigitalServicesComponent,
     
   ],
   imports: [
