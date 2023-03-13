@@ -31,6 +31,7 @@ import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-
 import { SalesPerformanceManagementComponent } from './sales-performance-management/sales-performance-management.component';
 import { DigitalServicesComponent } from './digital-services/digital-services.component';
 import { WebDevelopmentComponent } from './web-development/web-development.component';
+import { ScalePlanningComponent } from './scale-planning/scale-planning.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { WebDevelopmentComponent } from './web-development/web-development.compo
     SalesPerformanceManagementComponent,
     DigitalServicesComponent,
     WebDevelopmentComponent,
+    ScalePlanningComponent,
     
   ],
   imports: [
