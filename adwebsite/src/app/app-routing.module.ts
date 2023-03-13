@@ -19,6 +19,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SalesPerformanceManagementComponent } from './sales-performance-management/sales-performance-management.component';
 import { SapSolutionsComponent } from './sap-solutions/sap-solutions.component';
 import { ScalePlanningComponent } from './scale-planning/scale-planning.component';
+import { TechnologyComponent } from './technology/technology.component';
 import { TelecomComponent } from './telecom/telecom.component';
 import { WebDevelopmentComponent } from './web-development/web-development.component';
 import { WhatMasterComponent } from './what-master/what-master.component';
@@ -47,6 +48,7 @@ const routes: Routes = [
     {path: 'Manufacturing', component: ManufacturingComponent},
     {path: 'Medical', component: MedicalComponent},
     {path: 'Agriculture', component: AgricultureComponent},
+    {path: 'Technology', component: TechnologyComponent},
     {path: 'Locations', component: LocationsComponent},
     {path: '**', component: PageNotFoundComponent}
 ];
