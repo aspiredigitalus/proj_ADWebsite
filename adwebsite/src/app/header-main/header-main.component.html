@@ -14,24 +14,23 @@
                             <div>
                                 <a [routerLink]="['SAP-Solutions']"><h3 class="menu-header" id="sap_solutions">SAP Solutions</h3></a>
                                 <a [routerLink]="['CloudForCustomer']"><p class="menu-item" id="cloud_for_customer">C4C - Cloud for Customer</p></a>
-                                <p class="menu-item">CPQ - Configure Price Quote</p>
-                                <p class="menu-item">Sales Performance Management</p>
+                                <a [routerLink]="['ConfigurePriceQuote']"><p class="menu-item">CPQ - Configure Price Quote</p></a>
+                                <a [routerLink]="['SalesPerformanceManagement']"><p class="menu-item">Sales Performance Management</p></a>
                             </div>
                             <div>
-                                <h3 class="menu-header">Digital Services</h3>
-                                <p class="menu-item">Web Development</p>
-                                <p class="menu-item">Digital Marketing</p>
-                                <p class="menu-item">Scalability Planning</p>
+                                <a [routerLink]="['DigitalServices']"><h3 class="menu-header">Digital Services</h3></a>
+                                <a [routerLink]="['WebDev']"><p class="menu-item">Web Development</p></a>
+                                <a [routerLink]="['DigitalMarketing']"><p class="menu-item">Digital Marketing</p></a>
+                                <a [routerLink]="['ScalePlanning']"><p class="menu-item">Scalability Planning</p></a>
                             </div>
                             <div>
-                                <h3 class="menu-header">Industries</h3>
-                                <p class="menu-item">Telecommunication</p>
-                                <p class="menu-item">Industrial</p>
-                                <p class="menu-item">Manufacturing</p>
-                                <p class="menu-item">Medical</p>
-                                <p class="menu-item">Agriculture</p>
-                                <p class="menu-item">Technology</p>
-
+                                <a [routerLink]="['Industries']"><h3 class="menu-header">Industries</h3></a>
+                                <a [routerLink]="['Telecom']"><p class="menu-item">Telecommunications</p></a>
+                                <a [routerLink]="['Industrial']"><p class="menu-item">Industrial</p></a>
+                                <a [routerLink]="['Manufacturing']"><p class="menu-item">Manufacturing</p></a>
+                                <a [routerLink]="['Medical']"><p class="menu-item">Medical</p></a>
+                                <a [routerLink]="['Agriculture']"><p class="menu-item">Agriculture</p></a>
+                                <a [routerLink]="['Technology']"><p class="menu-item">Technology</p></a>
                             </div>
                         </div>
                     </div>
@@ -43,13 +42,13 @@
                     <div class="box">
                         <div class="menu-box menu-box-who">
                             <div>
-                                <h3 class="menu-header">Consultants</h3>
+                                <a [routerLink]="['Consultants']"><h3 class="menu-header">Consultants</h3></a>
                                 <p class="menu-item">The Process</p>
                                 <p class="menu-item">Money Savings</p>
                                 <p class="menu-item">Time Savings</p>
                             </div>
                             <div style="display:flex; flex-direction: column; justify-content: space-between;">
-                                <h3 class="menu-header">Our Staff</h3>
+                                <a [routerLink]="['Our-Staff']"><h3 class="menu-header">Our Staff</h3></a>
                                 <a [routerLink]="['Locations']"><h3 class="menu-header">Locations</h3></a>
                                 <a [routerLink]="['Contact-Us']"><h3 class="menu-header">Contact Us</h3></a>
                             </div>

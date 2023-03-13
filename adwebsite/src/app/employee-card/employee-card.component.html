@@ -1,0 +1,21 @@
+<a [href]="linkedInSrc" target="_blank">
+    <div class="employee-card-container">
+        <div class="center">
+            <img [src]="imgSrc" alt="Profile Picture" class="headshot">
+        </div>
+        <div class="center">
+            <h5 class="name">{{firstName}} {{lastName}}</h5>
+        </div>
+        <div class="center">
+            <h5 class="name"></h5>
+        </div>
+        <div *ngFor="let title of jobTitles" class="center">
+            <p class="jobTitle">{{title}}</p>
+        </div>
+        <div class="center">
+            <i class="bi bi-linkedin link-icon"></i>
+        </div>
+        
+    </div>
+</a>
+

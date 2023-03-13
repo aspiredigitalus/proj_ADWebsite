@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="staff-title-container">
+        <div id="management" [routerLink]="['Management']" class="staff-tab">
+            <h3>Management Team</h3>
+        </div>
+        <div id="usa" [routerLink]="['USA-Team']" class="staff-tab">
+            <h3>USA Team</h3>
+        </div>
+        <div id="india" [routerLink]="['India-Team']" class="staff-tab">
+            <h3>India Team</h3>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>

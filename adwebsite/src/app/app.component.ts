@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'adwebsite';
   urlSnippet:string = '';
   
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+  constructor(private router: Router) {
     router.events.pipe(
         filter((event): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe((event) => {
@@ -21,7 +21,6 @@ export class AppComponent {
         urlSnippet = urlSnippet.substring(0,charIndex);
     }
     this.urlSnippet = urlSnippet;
-    console.log(this.urlSnippet);
     });
   }
 

@@ -27,6 +27,24 @@ import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
 import { LocationsComponent } from './locations/locations.component';
+import { EmployeeCardComponent } from './employee-card/employee-card.component';
+import { OurStaffComponent } from './our-staff/our-staff.component';
+import { UsaTeamComponent } from './usa-team/usa-team.component';
+import { ManagementComponent } from './management/management.component';
+import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-price-quote.component';
+import { SalesPerformanceManagementComponent } from './sales-performance-management/sales-performance-management.component';
+import { DigitalServicesComponent } from './digital-services/digital-services.component';
+import { WebDevelopmentComponent } from './web-development/web-development.component';
+import { ScalePlanningComponent } from './scale-planning/scale-planning.component';
+import { DigitalMarketingComponent } from './digital-marketing/digital-marketing.component';
+import { OurIndustriesComponent } from './our-industries/our-industries.component';
+import { TelecomComponent } from './telecom/telecom.component';
+import { IndustrialComponent } from './industrial/industrial.component';
+import { ManufacturingComponent } from './manufacturing/manufacturing.component';
+import { MedicalComponent } from './medical/medical.component';
+import { AgricultureComponent } from './agriculture/agriculture.component';
+import { TechnologyComponent } from './technology/technology.component';
+import { ConsultantsComponent } from './consultants/consultants.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +66,24 @@ import { LocationsComponent } from './locations/locations.component';
     ContactButtonComponent,
     CloudForCustomerComponent,
     LocationsComponent,
+    ConfigurePriceQuoteComponent,
+    SalesPerformanceManagementComponent,
+    DigitalServicesComponent,
+    WebDevelopmentComponent,
+    ScalePlanningComponent,
+    DigitalMarketingComponent,
+    OurIndustriesComponent,
+    TelecomComponent,
+    IndustrialComponent,
+    ManufacturingComponent,
+    MedicalComponent,
+    AgricultureComponent,
+    TechnologyComponent,
+    ConsultantsComponent,
+    EmployeeCardComponent,
+    OurStaffComponent,
+    UsaTeamComponent,
+    ManagementComponent,
     
   ],
   imports: [
