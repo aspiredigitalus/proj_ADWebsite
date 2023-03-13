@@ -8,6 +8,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { DigitalMarketingComponent } from './digital-marketing/digital-marketing.component';
 import { DigitalServicesComponent } from './digital-services/digital-services.component';
 import { HomeComponent } from './home/home.component';
+import { IndustrialComponent } from './industrial/industrial.component';
 import { LocationsComponent } from './locations/locations.component';
 import { OurIndustriesComponent } from './our-industries/our-industries.component';
 import { OurMasterComponent } from './our-master/our-master.component';
@@ -39,6 +40,7 @@ const routes: Routes = [
     {path: 'ScalePlanning', component: ScalePlanningComponent},
     {path: 'Industries', component: OurIndustriesComponent},
     {path: 'Telecom', component: TelecomComponent},
+    {path: 'Industrial', component: IndustrialComponent},
     {path: 'Locations', component: LocationsComponent},
     {path: '**', component: PageNotFoundComponent}
 ];
