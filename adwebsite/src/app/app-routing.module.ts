@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ApplyNowComponent } from './apply-now/apply-now.component';
 import { CareersMasterComponent } from './careers-master/careers-master.component';
 import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
+import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-price-quote.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { LocationsComponent } from './locations/locations.component';
@@ -23,8 +24,9 @@ const routes: Routes = [
     {path: 'SAP-Solutions', component: SapSolutionsComponent},
     {path: 'Apply-Now', component: ApplyNowComponent},
     {path: 'CloudForCustomer', component: CloudForCustomerComponent},
+    {path: 'ConfigurePriceQuote', component: ConfigurePriceQuoteComponent},
     {path: 'Locations', component: LocationsComponent},
-    {path: '**', component: PageNotFoundComponent},
+    {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({

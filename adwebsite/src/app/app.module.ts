@@ -27,6 +27,7 @@ import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
 import { LocationsComponent } from './locations/locations.component';
+import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-price-quote.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { LocationsComponent } from './locations/locations.component';
     ContactButtonComponent,
     CloudForCustomerComponent,
     LocationsComponent,
+    ConfigurePriceQuoteComponent,
     
   ],
   imports: [
