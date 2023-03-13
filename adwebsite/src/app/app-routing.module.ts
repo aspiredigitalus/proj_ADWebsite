@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { IndustrialComponent } from './industrial/industrial.component';
 import { LocationsComponent } from './locations/locations.component';
 import { ManufacturingComponent } from './manufacturing/manufacturing.component';
+import { MedicalComponent } from './medical/medical.component';
 import { OurIndustriesComponent } from './our-industries/our-industries.component';
 import { OurMasterComponent } from './our-master/our-master.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -43,6 +44,7 @@ const routes: Routes = [
     {path: 'Telecom', component: TelecomComponent},
     {path: 'Industrial', component: IndustrialComponent},
     {path: 'Manufacturing', component: ManufacturingComponent},
+    {path: 'Medical', component: MedicalComponent},
     {path: 'Locations', component: LocationsComponent},
     {path: '**', component: PageNotFoundComponent}
 ];
