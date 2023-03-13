@@ -28,6 +28,7 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
 import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
 import { LocationsComponent } from './locations/locations.component';
 import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-price-quote.component';
+import { SalesPerformanceManagementComponent } from './sales-performance-management/sales-performance-management.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-
     CloudForCustomerComponent,
     LocationsComponent,
     ConfigurePriceQuoteComponent,
+    SalesPerformanceManagementComponent,
     
   ],
   imports: [

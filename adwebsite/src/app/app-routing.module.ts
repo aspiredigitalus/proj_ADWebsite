@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { LocationsComponent } from './locations/locations.component';
 import { OurMasterComponent } from './our-master/our-master.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SalesPerformanceManagementComponent } from './sales-performance-management/sales-performance-management.component';
 import { SapSolutionsComponent } from './sap-solutions/sap-solutions.component';
 import { WhatMasterComponent } from './what-master/what-master.component';
 import { WhoMasterComponent } from './who-master/who-master.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
     {path: 'Apply-Now', component: ApplyNowComponent},
     {path: 'CloudForCustomer', component: CloudForCustomerComponent},
     {path: 'ConfigurePriceQuote', component: ConfigurePriceQuoteComponent},
+    {path: 'SalesPerformanceManagement', component: SalesPerformanceManagementComponent},
     {path: 'Locations', component: LocationsComponent},
     {path: '**', component: PageNotFoundComponent}
 ];
