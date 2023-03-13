@@ -5,6 +5,7 @@ import { CareersMasterComponent } from './careers-master/careers-master.componen
 import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
 import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-price-quote.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { DigitalMarketingComponent } from './digital-marketing/digital-marketing.component';
 import { DigitalServicesComponent } from './digital-services/digital-services.component';
 import { HomeComponent } from './home/home.component';
 import { LocationsComponent } from './locations/locations.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
     {path: 'SalesPerformanceManagement', component: SalesPerformanceManagementComponent},
     {path: 'DigitalServices', component: DigitalServicesComponent},
     {path: 'WebDev', component: WebDevelopmentComponent},
+    {path: 'DigitalMarketing', component: DigitalMarketingComponent},
     {path: 'ScalePlanning', component: ScalePlanningComponent},
     {path: 'Locations', component: LocationsComponent},
     {path: '**', component: PageNotFoundComponent}

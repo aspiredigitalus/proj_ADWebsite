@@ -32,6 +32,7 @@ import { SalesPerformanceManagementComponent } from './sales-performance-managem
 import { DigitalServicesComponent } from './digital-services/digital-services.component';
 import { WebDevelopmentComponent } from './web-development/web-development.component';
 import { ScalePlanningComponent } from './scale-planning/scale-planning.component';
+import { DigitalMarketingComponent } from './digital-marketing/digital-marketing.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { ScalePlanningComponent } from './scale-planning/scale-planning.componen
     DigitalServicesComponent,
     WebDevelopmentComponent,
     ScalePlanningComponent,
+    DigitalMarketingComponent,
     
   ],
   imports: [
