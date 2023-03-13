@@ -36,6 +36,7 @@ import { DigitalMarketingComponent } from './digital-marketing/digital-marketing
 import { OurIndustriesComponent } from './our-industries/our-industries.component';
 import { TelecomComponent } from './telecom/telecom.component';
 import { IndustrialComponent } from './industrial/industrial.component';
+import { ManufacturingComponent } from './manufacturing/manufacturing.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { IndustrialComponent } from './industrial/industrial.component';
     OurIndustriesComponent,
     TelecomComponent,
     IndustrialComponent,
+    ManufacturingComponent,
     
   ],
   imports: [
