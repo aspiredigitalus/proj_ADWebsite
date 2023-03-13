@@ -12,6 +12,7 @@ import { OurMasterComponent } from './our-master/our-master.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SalesPerformanceManagementComponent } from './sales-performance-management/sales-performance-management.component';
 import { SapSolutionsComponent } from './sap-solutions/sap-solutions.component';
+import { WebDevelopmentComponent } from './web-development/web-development.component';
 import { WhatMasterComponent } from './what-master/what-master.component';
 import { WhoMasterComponent } from './who-master/who-master.component';
 
@@ -29,6 +30,7 @@ const routes: Routes = [
     {path: 'ConfigurePriceQuote', component: ConfigurePriceQuoteComponent},
     {path: 'SalesPerformanceManagement', component: SalesPerformanceManagementComponent},
     {path: 'DigitalServices', component: DigitalServicesComponent},
+    {path: 'WebDev', component: WebDevelopmentComponent},
     {path: 'Locations', component: LocationsComponent},
     {path: '**', component: PageNotFoundComponent}
 ];

@@ -30,6 +30,7 @@ import { LocationsComponent } from './locations/locations.component';
 import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-price-quote.component';
 import { SalesPerformanceManagementComponent } from './sales-performance-management/sales-performance-management.component';
 import { DigitalServicesComponent } from './digital-services/digital-services.component';
+import { WebDevelopmentComponent } from './web-development/web-development.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { DigitalServicesComponent } from './digital-services/digital-services.co
     ConfigurePriceQuoteComponent,
     SalesPerformanceManagementComponent,
     DigitalServicesComponent,
+    WebDevelopmentComponent,
     
   ],
   imports: [
