@@ -2,6 +2,19 @@ h3 {
     margin:0;
     padding:0;
 }
+.header-section{
+    width:100%;
+    background-color: #fafafa;
+}
+.header-section-inner{
+    padding-top:2em;
+    padding-bottom: 2em;
+}
+.page-title{
+    width: 100%;
+    text-align: center;
+    
+}
 .staff-title-container {
     width:100%;
     display: grid;
