@@ -28,6 +28,7 @@ import { TelecomComponent } from './telecom/telecom.component';
 import { WebDevelopmentComponent } from './web-development/web-development.component';
 import { WhatMasterComponent } from './what-master/what-master.component';
 import { WhoMasterComponent } from './who-master/who-master.component';
+import { CultureComponent } from './culture/culture.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -61,6 +62,7 @@ const routes: Routes = [
         {path: 'USA-Team', component: UsaTeamComponent},
         {path: '**', component: PageNotFoundComponent}
     ]},
+    {path: 'Culture', component: CultureComponent},
     {path: '**', component: PageNotFoundComponent},
 ];
 
