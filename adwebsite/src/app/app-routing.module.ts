@@ -29,6 +29,7 @@ import { WebDevelopmentComponent } from './web-development/web-development.compo
 import { WhatMasterComponent } from './what-master/what-master.component';
 import { WhoMasterComponent } from './who-master/who-master.component';
 import { CultureComponent } from './culture/culture.component';
+import { DiversityComponent } from './diversity/diversity.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -63,6 +64,7 @@ const routes: Routes = [
         {path: '**', component: PageNotFoundComponent}
     ]},
     {path: 'Culture', component: CultureComponent},
+    {path: 'Diversity', component: DiversityComponent},
     {path: '**', component: PageNotFoundComponent},
 ];
 
