@@ -47,6 +47,7 @@ import { CultureComponent } from './culture/culture.component';
 import { DiversityComponent } from './diversity/diversity.component';
 import { LeadershipComponent } from './leadership/leadership.component';
 import { UaeTeamComponent } from './uae-team/uae-team.component';
+import { MainPageMessagesComponent } from './main-page-messages/main-page-messages.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +90,7 @@ import { UaeTeamComponent } from './uae-team/uae-team.component';
     DiversityComponent,
     LeadershipComponent,
     UaeTeamComponent,
+    MainPageMessagesComponent,
     
   ],
   imports: [
