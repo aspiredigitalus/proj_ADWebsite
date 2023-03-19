@@ -1,0 +1,79 @@
+a {
+    text-decoration: none;
+}
+.leadership-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+}
+.leadership-card{
+    height: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:1em;
+    border: 2px solid var(--color-s100);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition:all 1s ease-in-out;
+}
+.leadership-card:hover{
+    box-shadow: 10px 10px 20px rgba(253, 53, 53, 0.3);
+    transition:all 1s ease-in-out;
+}
+.section-margin-top{
+    margin-top:2em;
+}
+.leadership-card-image{
+    display: flex;
+    justify-content: center;
+}
+.leadership-card-image img{
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+.leadership-card-name{
+    display: flex;
+    justify-content: center;
+}
+.leadership-card-name h3{
+    text-align: center;
+    margin:.5em 0 0 0;
+}
+.leadership-card-title{
+    display: flex;
+    justify-content: center;
+}
+.leadership-card-title h5{
+    text-align: center;
+    margin:.5em 0 0 0;
+}
+.leadership-card-description{
+    display: flex;
+    justify-content: center;
+}
+.leadership-card-description p{
+    text-align: center;
+    margin:.5em 0 0 0;
+}
+.leadership-card-icon{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: flex-end;
+}
+.leadership-card-icon i{
+    color: var(--color-p500);
+    font-size: 26px;
+    margin:0;
+    padding:0;
+    text-align: center;
+
+
+}
+.bandw {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}

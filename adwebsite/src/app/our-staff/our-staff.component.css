@@ -4,7 +4,7 @@ h3 {
 }
 .header-section{
     width:100%;
-    background-color: #fafafa;
+    background-color: #f0f0f0;
 }
 .header-section-inner{
     padding-top:2em;
@@ -18,9 +18,10 @@ h3 {
 .staff-title-container {
     width:100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 3em;
     margin-bottom: 5em;
+    margin-top:1em;
 }
 .staff-title-container h3{
     text-align: center;

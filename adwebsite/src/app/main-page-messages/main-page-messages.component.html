@@ -1,0 +1,15 @@
+<ngb-carousel
+	[showNavigationArrows]="showNavigationArrows"
+	[showNavigationIndicators]="showNavigationIndicators"
+>
+    <ng-template ngbSlide *ngFor="let message of messages">
+        <div class="picsum-img-wrapper">
+            <h2>{{ message.getHeadline() }}</h2>
+            <p >{{ message.getMessage() }}</p>
+        </div>
+    </ng-template>
+</ngb-carousel>
+<hr />
+
+
+

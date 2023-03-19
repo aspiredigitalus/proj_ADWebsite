@@ -23,14 +23,12 @@ import { SapSolutionsComponent } from './sap-solutions/sap-solutions.component';
 import { ApplyNowComponent } from './apply-now/apply-now.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TopOfPageComponent } from './top-of-page/top-of-page.component';
-
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { CloudForCustomerComponent } from './cloud-for-customer/cloud-for-customer.component';
 import { LocationsComponent } from './locations/locations.component';
 import { EmployeeCardComponent } from './employee-card/employee-card.component';
 import { OurStaffComponent } from './our-staff/our-staff.component';
 import { UsaTeamComponent } from './usa-team/usa-team.component';
-import { ManagementComponent } from './management/management.component';
 import { ConfigurePriceQuoteComponent } from './configure-price-quote/configure-price-quote.component';
 import { SalesPerformanceManagementComponent } from './sales-performance-management/sales-performance-management.component';
 import { DigitalServicesComponent } from './digital-services/digital-services.component';
@@ -47,6 +45,9 @@ import { TechnologyComponent } from './technology/technology.component';
 import { ConsultantsComponent } from './consultants/consultants.component';
 import { CultureComponent } from './culture/culture.component';
 import { DiversityComponent } from './diversity/diversity.component';
+import { LeadershipComponent } from './leadership/leadership.component';
+import { UaeTeamComponent } from './uae-team/uae-team.component';
+import { MainPageMessagesComponent } from './main-page-messages/main-page-messages.component';
 
 @NgModule({
   declarations: [
@@ -85,9 +86,11 @@ import { DiversityComponent } from './diversity/diversity.component';
     EmployeeCardComponent,
     OurStaffComponent,
     UsaTeamComponent,
-    ManagementComponent,
     CultureComponent,
     DiversityComponent,
+    LeadershipComponent,
+    UaeTeamComponent,
+    MainPageMessagesComponent,
     
   ],
   imports: [
