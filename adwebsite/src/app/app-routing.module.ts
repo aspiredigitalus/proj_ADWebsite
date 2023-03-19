@@ -1,5 +1,4 @@
 import { UsaTeamComponent } from './usa-team/usa-team.component';
-import { ManagementComponent } from './management/management.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AgricultureComponent } from './agriculture/agriculture.component';
@@ -30,6 +29,8 @@ import { WhatMasterComponent } from './what-master/what-master.component';
 import { WhoMasterComponent } from './who-master/who-master.component';
 import { CultureComponent } from './culture/culture.component';
 import { DiversityComponent } from './diversity/diversity.component';
+import { LeadershipComponent } from './leadership/leadership.component';
+import { UaeTeamComponent } from './uae-team/uae-team.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -58,9 +59,10 @@ const routes: Routes = [
     {path: 'Consultants', component: ConsultantsComponent},
     {path: 'Locations', component: LocationsComponent},
     {path: 'Our-Staff', component: OurStaffComponent, children: [
-        {path: '', redirectTo: 'Management', pathMatch: 'full'},
-        {path: 'Management', component: ManagementComponent},
+        {path: '', redirectTo: 'Leadership', pathMatch: 'full'},
+        {path: 'Leadership', component: LeadershipComponent},
         {path: 'USA-Team', component: UsaTeamComponent},
+        {path: 'UAE-Team', component: UaeTeamComponent},
         {path: '**', component: PageNotFoundComponent}
     ]},
     {path: 'Culture', component: CultureComponent},

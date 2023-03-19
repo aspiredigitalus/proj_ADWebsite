@@ -11,18 +11,20 @@ import { EmployeeService } from '../services/employee/employee.service';
 })
 export class OurStaffComponent implements OnInit {
     
-    managementId:Element|null = null;
+    leadershipId:Element|null = null;
     usaId:Element|null = null;
     indiaId:Element|null = null;
+    uaeId:Element|null = null;
 
     constructor(private router:Router){
         console.log('constructor');
     }
     ngOnInit(): void {
         console.log('ngOnInit');
-        this.managementId = document.getElementById('management');
+        this.leadershipId = document.getElementById('leadership');
         this.usaId = document.getElementById('usa');
         this.indiaId = document.getElementById('india');
+        this.uaeId = document.getElementById('uae');
 
         //this.router.events.subscribe(event => console.log(event));
 
@@ -30,22 +32,31 @@ export class OurStaffComponent implements OnInit {
             filter((event): event is Scroll => event instanceof Scroll)
         ).subscribe((event) => {
             let urlSnippet = event.routerEvent.url;
-            if(urlSnippet.search('Management') != -1){
-                this.managementId?.classList.add('tab-on')
+            if(urlSnippet.search('Leadership') != -1){
+                this.leadershipId?.classList.add('tab-on')
                 this.usaId?.classList.remove('tab-on')
                 this.indiaId?.classList.remove('tab-on')
+                this.uaeId?.classList.remove('tab-on')
             } else if(urlSnippet.search('USA') != -1){
                 this.usaId?.classList.add('tab-on')
-                this.managementId?.classList.remove('tab-on')
+                this.leadershipId?.classList.remove('tab-on')
                 this.indiaId?.classList.remove('tab-on')
+                this.uaeId?.classList.remove('tab-on')
             }else if(urlSnippet.search('India') != -1){
                 this.indiaId?.classList.add('tab-on')
-                this.managementId?.classList.remove('tab-on')
+                this.leadershipId?.classList.remove('tab-on')
                 this.usaId?.classList.remove('tab-on')
+                this.uaeId?.classList.remove('tab-on')
+            }else if(urlSnippet.search('UAE') != -1){
+                this.uaeId?.classList.add('tab-on')
+                this.indiaId?.classList.remove('tab-on')
+                this.leadershipId?.classList.remove('tab-on')
+                this.usaId?.classList.remove('tab-on')     
             }else {
-                this.managementId?.classList.add('tab-on')
+                this.leadershipId?.classList.add('tab-on')
                 this.usaId?.classList.remove('tab-on')
                 this.indiaId?.classList.remove('tab-on')
+                this.uaeId?.classList.remove('tab-on')
             }
         });
     }
