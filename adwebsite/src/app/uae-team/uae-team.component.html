@@ -1,1 +1,10 @@
-<p>uae-team works!</p>
+<div class="uae-container">
+    <employee-card *ngFor="let uae of uaeResources" 
+        [imgSrc]="uae.imgSrc"
+        [firstName]="uae.firstName"
+        [lastName]="uae.lastName"
+        [jobTitles]="uae.jobTitles"
+        [linkedInSrc]="uae.linkedInSrc">
+    </employee-card>
+</div>
+

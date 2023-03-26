@@ -1,9 +1,9 @@
 <div class="usa-container">
     <employee-card *ngFor="let usa of usaResources" 
-        [imgSrc]="usa.imgSrc"
+        [imgSrc]="usa.profileLoc"
         [firstName]="usa.firstName"
         [lastName]="usa.lastName"
         [jobTitles]="usa.jobTitles"
-        [linkedInSrc]="usa.linkedInSrc">
+        [linkedInSrc]="usa.linkedIn">
     </employee-card>
 </div>

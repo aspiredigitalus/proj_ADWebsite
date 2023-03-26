@@ -31,6 +31,7 @@ import { CultureComponent } from './culture/culture.component';
 import { DiversityComponent } from './diversity/diversity.component';
 import { LeadershipComponent } from './leadership/leadership.component';
 import { UaeTeamComponent } from './uae-team/uae-team.component';
+import { IndiaTeamComponent } from './india-team/india-team.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -63,6 +64,7 @@ const routes: Routes = [
         {path: 'Leadership', component: LeadershipComponent},
         {path: 'USA-Team', component: UsaTeamComponent},
         {path: 'UAE-Team', component: UaeTeamComponent},
+        {path: 'India-Team', component: IndiaTeamComponent},
         {path: '**', component: PageNotFoundComponent}
     ]},
     {path: 'Culture', component: CultureComponent},
