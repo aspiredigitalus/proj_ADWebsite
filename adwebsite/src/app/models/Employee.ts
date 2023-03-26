@@ -1,10 +1,11 @@
+import { JobPosition } from './JobPosition';
 export class Employee {
     private _id:string;
     private _imgSrc:string;
     private _firstName:string;
     private _middleInit:string;
     private _lastName:string;
-    private _jobTitles:string[];
+    private _jobTitles:Array<JobPosition>;
     private _linkedInSrc:string;
     private _region:string;
 
@@ -51,7 +52,7 @@ export class Employee {
       return this._jobTitles;
     }
     
-    set jobTitles(val: string[]) {
+    set jobTitles(val:Array<JobPosition>) {
       this._jobTitles = val;
     }
     
@@ -71,7 +72,7 @@ export class Employee {
         this._region = region;
     }
 
-    constructor (id:string, imgSrc:string='', firstName:string='', middleInit:string = '', lastName:string='', jobTitles:string[]=[], linkedInSrc:string='', region:string='') {
+    constructor (id:string, imgSrc:string='', firstName:string='', middleInit:string = '', lastName:string='', jobTitles:Array<JobPosition>=new Array<JobPosition>, linkedInSrc:string='', region:string='') {
         this._id = id;
         this._imgSrc = imgSrc;
         this._firstName = firstName;

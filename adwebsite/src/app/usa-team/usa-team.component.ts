@@ -1,3 +1,4 @@
+import { PositionService } from './../services/position/position.service';
 import { Component } from '@angular/core';
 import { Employee } from '../models/Employee';
 import { EmployeeService } from '../services/employee/employee.service';
@@ -10,13 +11,16 @@ import { EmployeeService } from '../services/employee/employee.service';
 export class UsaTeamComponent {
     usaResources:any;
     
-    constructor(empService:EmployeeService) {
+    constructor(empService:EmployeeService, posService:PositionService) {
         empService.getUsaResources()
-            .subscribe((response:Array<Employee>) => {
+            .subscribe((response) => {
                 this.usaResources = response;
-                console.log(this.usaResources);
+                
                 for (let index = 0; index < response.length; index++) {
-                    
+                    posService.getPositionTileByEmpId(this.usaResources[index].id)
+                        .subscribe((posRep) =>{
+                            this.usaResources[index]['jobTitles']=posRep;
+                        });
                 }
                 console.log(this.usaResources);
             });
