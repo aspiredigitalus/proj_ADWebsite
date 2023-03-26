@@ -17,7 +17,6 @@ export class UsaTeamComponent {
                 console.log(this.usaResources);
                 for (let index = 0; index < response.length; index++) {
                     
-                    
                 }
                 console.log(this.usaResources);
             });

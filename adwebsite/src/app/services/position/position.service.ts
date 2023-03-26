@@ -8,5 +8,5 @@ export class PositionService {
 
   constructor(private http:HttpClient) { }
 
-  
+
 }
