@@ -8,9 +8,18 @@ import { EmployeeService } from '../services/employee/employee.service';
   styleUrls: ['./usa-team.component.css']
 })
 export class UsaTeamComponent {
-    usaResources:Employee[];
+    usaResources:any;
     
     constructor(empService:EmployeeService) {
-        this.usaResources = empService.getUsaResources();
+        empService.getUsaResources()
+            .subscribe((response:Array<Employee>) => {
+                this.usaResources = response;
+                console.log(this.usaResources);
+                for (let index = 0; index < response.length; index++) {
+                    
+                    
+                }
+                console.log(this.usaResources);
+            });
     }
 }

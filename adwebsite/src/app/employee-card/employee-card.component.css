@@ -3,6 +3,9 @@ a {
 }
 .employee-card-container{
     transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .headshot{
@@ -29,8 +32,13 @@ a {
     margin:0;
     padding:0;
     text-align: center;
+
 }
 .center{
     display: flex;
     justify-content: space-around;
+}
+.link_container{
+    flex:1;
+    align-items: end;
 }
