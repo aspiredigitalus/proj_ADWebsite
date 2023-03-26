@@ -3,9 +3,11 @@ export class JobPosition {
     id:number;
     position:string;
 
-    constructor(id:number = -1, position:string="-1") {
+
+    constructor(id:number=-1, position='') {
         this.id=id;
         this.position=position;
+
     }
 
     getId():number {
@@ -17,9 +19,11 @@ export class JobPosition {
     setId(id:number):void {
         this.id = id;
     }
-    setPosition(position:string):void {
+
+    setPositionId(position:string):void {
         this.position = position;
     }
+
 
 
 

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Position } from '../models/Position';
 
 @Component({
   selector: 'employee-card',
@@ -9,7 +10,7 @@ export class EmployeeCardComponent {
     @Input() imgSrc:string = '';
     @Input() firstName:string = '';
     @Input() lastName:string = '';
-    @Input() jobTitles:string[] = [];
+    @Input() jobTitles:any;
     @Input() linkedInSrc:string = '';
 
 
