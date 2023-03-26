@@ -1,1 +1,9 @@
-<p>india-team works!</p>
+<div class="india-container">
+    <employee-card *ngFor="let india of indiaResources" 
+        [imgSrc]="india.profileLoc"
+        [firstName]="india.firstName"
+        [lastName]="india.lastName"
+        [jobTitles]="india.jobTitles"
+        [linkedInSrc]="india.linkedIn">
+    </employee-card>
+</div>
