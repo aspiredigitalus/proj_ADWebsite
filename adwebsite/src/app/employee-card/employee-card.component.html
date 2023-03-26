@@ -1,7 +1,7 @@
 <a [href]="linkedInSrc" target="_blank">
     <div class="employee-card-container">
         <div class="center">
-            <img [src]="imgSrc" alt="Profile Picture" class="headshot">
+            <img [src]="imgSrc" alt="Profile Picture" class="headshot" (error)="handleMissingImage($event)">
         </div>
         <div class="center">
             <h5 class="name">{{firstName}} {{lastName}}</h5>

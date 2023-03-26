@@ -13,5 +13,9 @@ export class EmployeeCardComponent {
     @Input() jobTitles:any;
     @Input() linkedInSrc:string = '';
 
+    public handleMissingImage(event: Event) {
+        (event.target as HTMLImageElement).src = "assets/media/headshots/penguinicon.jpg";
+    }
+
 
 }

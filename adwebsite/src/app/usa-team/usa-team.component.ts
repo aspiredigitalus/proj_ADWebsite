@@ -22,7 +22,6 @@ export class UsaTeamComponent {
                             this.usaResources[index]['jobTitles']=posRep;
                         });
                 }
-                console.log(this.usaResources);
             });
     }
 }
