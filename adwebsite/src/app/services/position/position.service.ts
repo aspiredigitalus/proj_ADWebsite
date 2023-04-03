@@ -18,6 +18,6 @@ export class PositionService {
             params: new HttpParams()
                 .append('employee_id', id)
         }
-        return this.http.get(Variables.baseurl+'/position', options);
+        return this.http.get(Variables.baseurl+'api/position', options);
     }
 }

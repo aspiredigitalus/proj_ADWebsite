@@ -16,10 +16,11 @@ export class EmployeeService {
     uaeResources = [];
     indiaResources = [];
     getUsaResources():Observable<any> {
-        console.log
+        console.log("get USA Resources");
         const options = {
             headers: new HttpHeaders()
-                .append('content-type', 'application/json'),
+                .append('content-type', 'application/json')
+                .append('Access-Control-Allow-Origin', '*'),
             params: new HttpParams()
                 .append('region', 'USA')
         }
@@ -29,7 +30,8 @@ export class EmployeeService {
     getUaeResources():Observable<any> {
         const options = {
             headers: new HttpHeaders()
-                .append('content-type', 'application/json'),
+                .append('content-type', 'application/json')
+                .append('Access-Control-Allow-Origin', '*'),
             params: new HttpParams()
                 .append('region', 'UAE')
         }
@@ -38,7 +40,8 @@ export class EmployeeService {
     getIndiaResources():Observable<any> {
         const options = {
             headers: new HttpHeaders()
-                .append('content-type', 'application/json'),
+                .append('content-type', 'application/json')
+                .append('Access-Control-Allow-Origin', '*'),
             params: new HttpParams()
                 .append('region', 'India')
         }
