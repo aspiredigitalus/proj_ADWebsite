@@ -22,7 +22,7 @@ export class EmployeeService {
             params: new HttpParams()
                 .append('region', 'USA')
         }
-        return this.http.get<Employee[]>(Variables.baseurl+'/employee/region', options);
+        return this.http.get<Employee[]>(Variables.baseurl+'api/employee/region', options);
     }
 
     getUaeResources():Observable<any> {
@@ -32,7 +32,7 @@ export class EmployeeService {
             params: new HttpParams()
                 .append('region', 'UAE')
         }
-        return this.http.get<Employee[]>(Variables.baseurl+'/employee/region', options);
+        return this.http.get<Employee[]>(Variables.baseurl+'api/employee/region', options);
     }
     getIndiaResources():Observable<any> {
         const options = {
@@ -41,6 +41,6 @@ export class EmployeeService {
             params: new HttpParams()
                 .append('region', 'India')
         }
-        return this.http.get<Employee[]>(Variables.baseurl+'/employee/region', options);
+        return this.http.get<Employee[]>(Variables.baseurl+'api/employee/region', options);
     }
 }
