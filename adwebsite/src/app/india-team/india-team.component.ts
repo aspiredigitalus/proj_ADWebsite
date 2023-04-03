@@ -16,7 +16,7 @@ export class IndiaTeamComponent {
                 this.indiaResources = response;
                 
                 for (let index = 0; index < response.length; index++) {
-                    posService.getPositionTileByEmpId(this.indiaResources[index].id)
+                    posService.getPositionTitleByEmpId(this.indiaResources[index].id)
                         .subscribe((posRep) =>{
                             this.indiaResources[index]['jobTitles']=posRep;
                         });

@@ -17,7 +17,7 @@ export class UaeTeamComponent {
                 this.uaeResources = response;
                 
                 for (let index = 0; index < response.length; index++) {
-                    posService.getPositionTileByEmpId(this.uaeResources[index].id)
+                    posService.getPositionTitleByEmpId(this.uaeResources[index].id)
                         .subscribe((posRep) =>{
                             this.uaeResources[index]['jobTitles']=posRep;
                         });

@@ -11,13 +11,13 @@ export class PositionService {
 
   constructor(private http:HttpClient) { }
 
-  getPositionTileByEmpId(id:string):Observable<any> {
+  getPositionTitleByEmpId(id:string):Observable<any> {
         const options = {
             headers: new HttpHeaders()
                 .append('content-type', 'application/json'),
             params: new HttpParams()
                 .append('employee_id', id)
         }
-        return this.http.get<JobPosition[]>(Variables.baseurl+'/position', options);
+        return this.http.get(Variables.baseurl+'/position', options);
     }
 }

@@ -9,12 +9,13 @@ export class Employee {
     private _linkedInSrc:string;
     private _region:string;
 
+
     get id() {
         return this._id;
     }
 
     set id(id:string){
-        this.id = id;
+        this._id = id;
     }
 
     get imgSrc() {
