@@ -28,8 +28,7 @@ export class DiversityComponent implements OnInit {
     }
 
 
-    selected(e: Event) {
-        
+    selected(e: Event) {     
         let targetElement = (e.target as HTMLElement);
         if(targetElement.nodeName != 'DIV'){
             targetElement = targetElement.parentElement!;
@@ -41,13 +40,17 @@ export class DiversityComponent implements OnInit {
         });
         this.descElementArray.forEach(descElement => {
             descElement.classList.add('hidden');
-            descElement.children.item(0)?.classList.add('hidden-text');
+            for (let index = 0; index < descElement.children.length; index++) {
+                descElement.children.item(index)?.classList.add('hidden-text');
+            }     
         });
         targetElement.classList.remove('flag-narrow');
         targetElement.classList.add('flag');
         
         document.getElementById(targetName+'-desc')?.classList.remove('hidden');
-        document.getElementById(targetName+'-desc')?.children.item(0)?.classList.remove('hidden-text');
-
+        for (let index = 0; index < document.getElementById(targetName+'-desc')?.children.length!; index++) {
+            document.getElementById(targetName+'-desc')?.children.item(index)?.classList.remove('hidden-text');
+            
+        }
     }
 }

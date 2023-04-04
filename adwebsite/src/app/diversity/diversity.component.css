@@ -33,21 +33,20 @@
 .description-container{
     width: 600px;
     transition: all 1s ease-in-out;
+    max-height: 100%;
 }
 .hidden {
     width: 0px;
-    overflow: hidden;
-    transition: all 1s ease-in-out;
 }
 .hidden-text{
     font-size: 0pt;
     opacity: 0;
-    overflow: hidden;
     transition: all 1s ease-in-out;
 }
 .description {
     font-size: 14pt;
     padding: 1em;
+    text-overflow: clip;
 }
 #red:hover, #green:hover, #blue:hover, #yellow:hover, #orange:hover, #purple:hover {
     cursor: pointer;
@@ -57,43 +56,43 @@
     background-color: #EE204D;
 }
 #red h3{
-    color: #EE204D;
-    filter:invert();
+    color: white;
+    
 }
 #green{
     background-color: #15807B;
 }
 #green h3{
-    color: #15807B;
-    filter:invert();
+    color: white;
+    
 }
 #blue{
     background-color: #1974D2;
 }
 #blue h3{
-    color: #1974D2;
-    filter:invert();
+    color: white;
+    
 }
 #yellow{
     background-color: #FDFC74;
 }
 #yellow h3{
-    color: #FDFC74;
-    filter:invert();
+    color: #1974D2;
+    
 }
 #orange{
     background-color: #FFB653;
 }
 #orange h3{
-    color: #FFB653;
-    filter:invert();
+    color: white;
+    
 }
 #purple{
     background-color: #C364C5;
 }
 #purple h3{
-    color: #C364C5;
-    filter:invert();
+    color: white;
+    
 }
 .flag-text{
 
