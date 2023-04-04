@@ -50,6 +50,9 @@ import { UaeTeamComponent } from './uae-team/uae-team.component';
 import { MainPageMessagesComponent } from './main-page-messages/main-page-messages.component';
 import { IndiaTeamComponent } from './india-team/india-team.component';
 import { HttpClientModule } from '@angular/common/http';
+import { OurPledgeComponent } from './our-pledge/our-pledge.component';
+import { MissionStatementComponent } from './mission-statement/mission-statement.component';
+import { CloudCenteredDesignComponent } from './cloud-centered-design/cloud-centered-design.component';
 
 @NgModule({
   declarations: [
@@ -94,6 +97,9 @@ import { HttpClientModule } from '@angular/common/http';
     UaeTeamComponent,
     MainPageMessagesComponent,
     IndiaTeamComponent,
+    OurPledgeComponent,
+    MissionStatementComponent,
+    CloudCenteredDesignComponent,
     
   ],
   imports: [

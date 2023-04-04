@@ -32,6 +32,9 @@ import { DiversityComponent } from './diversity/diversity.component';
 import { LeadershipComponent } from './leadership/leadership.component';
 import { UaeTeamComponent } from './uae-team/uae-team.component';
 import { IndiaTeamComponent } from './india-team/india-team.component';
+import { CloudCenteredDesignComponent } from './cloud-centered-design/cloud-centered-design.component';
+import { OurPledgeComponent } from './our-pledge/our-pledge.component';
+import { MissionStatementComponent } from './mission-statement/mission-statement.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -69,6 +72,9 @@ const routes: Routes = [
     ]},
     {path: 'Culture', component: CultureComponent},
     {path: 'Diversity', component: DiversityComponent},
+    {path: 'Cloud-Centered-Design', component: CloudCenteredDesignComponent},
+    {path: 'Our-Pledge', component: OurPledgeComponent},
+    {path: 'Mission-Statement', component: MissionStatementComponent},
     {path: '**', component: PageNotFoundComponent},
 ];
 
