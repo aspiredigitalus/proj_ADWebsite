@@ -1,7 +1,7 @@
 
 .flag-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    display: flex;
 }
 .flag{
     width: 200px;
@@ -13,46 +13,84 @@
     padding-top:3em;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
+    transition: all 1s ease-in-out;
 }
-.red{
+
+.flag-narrow{
+    width: 80px;
+    height: 600px;
+    margin-left: auto;
+    margin-right:auto;
+    display:flex;
+    justify-content: center;
+    padding-top:3em;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    transition: all 1s ease-in-out;
+
+}
+.description-container{
+    width: 600px;
+    transition: all 1s ease-in-out;
+}
+.hidden {
+    width: 0px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.hidden-text{
+    font-size: 0pt;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.description {
+    font-size: 14pt;
+    padding: 1em;
+}
+#red:hover, #green:hover, #blue:hover, #yellow:hover, #orange:hover, #purple:hover {
+    cursor: pointer;
+    filter: brightness(105%);
+}
+#red{
     background-color: #EE204D;
 }
-.red h3{
+#red h3{
     color: #EE204D;
     filter:invert();
 }
-.green{
+#green{
     background-color: #15807B;
 }
-.green h3{
+#green h3{
     color: #15807B;
     filter:invert();
 }
-.blue{
+#blue{
     background-color: #1974D2;
 }
-.blue h3{
+#blue h3{
     color: #1974D2;
     filter:invert();
 }
-.yellow{
+#yellow{
     background-color: #FDFC74;
 }
-.yellow h3{
+#yellow h3{
     color: #FDFC74;
     filter:invert();
 }
-.orange{
+#orange{
     background-color: #FFB653;
 }
-.orange h3{
+#orange h3{
     color: #FFB653;
     filter:invert();
 }
-.purple{
+#purple{
     background-color: #C364C5;
 }
-.purple h3{
+#purple h3{
     color: #C364C5;
     filter:invert();
 }

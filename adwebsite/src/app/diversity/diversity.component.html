@@ -10,22 +10,45 @@
     
     
     <div class="flag-container">
-        <div class="flag red">
+        <div class="flag" id="red" (click)="selected($event)">
             <h3 class="flag-text">productivity</h3>
         </div>
-        <div class="flag green">
+        <div class="description-container hidden" id="red-desc">
+            <p class="description hidden-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, rem!</p>
+        </div>
+
+        <div class="flag" id="green" (click)="selected($event)">
             <h3 class="flag-text">innovation</h3>
         </div>
-        <div class="flag blue">
+        <div class="description-container hidden" id="green-desc">
+            <p class="description hidden-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, rem!</p>
+        </div>
+
+        <div class="flag" id="blue" (click)="selected($event)">
             <h3 class="flag-text">creativity</h3>
         </div>
-        <div class="flag yellow">
+        <div class="description-container hidden" id="blue-desc">
+            <p class="description hidden-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ab, reprehenderit non, unde adipisci a dignissimos vel beatae facilis voluptatem omnis dolores tempora laudantium dolor minima? Nihil delectus aliquid rerum!Voluptates, rem!</p>
+        </div>
+
+        <div class="description-container hidden" id=yellow-desc>
+            <p class="description hidden-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, rem!</p>
+        </div>
+        <div class="flag" id="yellow" (click)="selected($event)">
             <h3 class="flag-text">solutions</h3>
         </div>
-        <div class="flag orange">
+
+        <div class="description-container hidden" id="orange-desc">
+            <p class="description hidden-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, rem!</p>
+        </div>
+        <div class="flag" id="orange" (click)="selected($event)">
             <h3 class="flag-text">revenue</h3>
         </div>
-        <div class="flag purple">
+
+        <div class="description-container hidden" id="purple-desc">
+            <p class="description hidden-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, rem!</p>
+        </div>
+        <div class="flag" id="purple" (click)="selected($event)">
             <h3 class="flag-text">understanding</h3>
         </div>
 
