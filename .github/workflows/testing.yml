@@ -14,7 +14,7 @@ jobs:
       with:
         url: http://aspiredigital.asuscomm.com:8085/api/deploy?batpath=C:/Users/Administrator/Documents/sites/adwebsite/deploy.bat
         method: GET
-        timeout: 20000
+        timeout: 60000
     - name: Show Response
       run: |
         echo ${{ steps.APIResponse.outputs.headers }}
