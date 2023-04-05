@@ -1,0 +1,47 @@
+.background{
+    height:100%;
+    margin:0;
+    padding:0;
+    background-image: radial-gradient(circle, #e60000, #d30032, #b2004c, #88005a, #59005c, #431158, #2e1750, #1c1845, #201c40, #23203c, #262436, #292831);    
+}
+.mission-card-container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mission-card{
+    width: 700px;
+    height: 350px;
+    border: 2px solid var(--offset-500);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: rgba(255,255,255,.85);
+}
+.mission-statement {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+.signature {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+.mission-statement-text{
+    font-size: 26pt;
+    font-weight: 300;
+}
+.signature-text{
+    font-size:16pt;
+}
+.my-quote{
+    font-size: 36pt;
+}
+
+
+

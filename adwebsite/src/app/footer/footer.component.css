@@ -20,7 +20,6 @@ a {
         ". footer-logo footer-logo ."
         "footer-what footer-who footer-our footer-careers"
         ". footer-copyright footer-copyright .";
-    margin-top: 2em;
     row-gap: 2em;
 }
 .footer-container div{
