@@ -6,6 +6,11 @@ h3 {
     width:100%;
     background-color: #f0f0f0;
 }
+.header-text{
+    font-size: 14pt;
+    text-align: center;
+    color: var(--offset-900);
+;}
 .header-section-inner{
     padding-top:2em;
     padding-bottom: 2em;
