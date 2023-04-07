@@ -53,6 +53,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { OurPledgeComponent } from './our-pledge/our-pledge.component';
 import { MissionStatementComponent } from './mission-statement/mission-statement.component';
 import { CloudCenteredDesignComponent } from './cloud-centered-design/cloud-centered-design.component';
+import { OpeningsComponent } from './openings/openings.component';
 
 @NgModule({
   declarations: [
@@ -100,6 +101,7 @@ import { CloudCenteredDesignComponent } from './cloud-centered-design/cloud-cent
     OurPledgeComponent,
     MissionStatementComponent,
     CloudCenteredDesignComponent,
+    OpeningsComponent,
     
   ],
   imports: [
