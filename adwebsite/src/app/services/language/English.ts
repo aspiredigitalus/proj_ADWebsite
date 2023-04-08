@@ -26,6 +26,19 @@ export class English implements LanguageInterface {
             ['events', 'Events'],
             ['events-message', 'We offer company Conventions, Conferences, Meetups and More!  Get to know your coworkers off the clock, but on our dime'],
             
+            /******* leadership Component *******/
+            ['robinsingh-description', 'Robin is an innovator and leader with a history of success in implementing the latest technologies, defying conventions, challenging the status quo, and delivering complex world class programs'],
+            ['corrinefreese-description', 'Corrine has wide-ranging experience leading organization-wide transformation with leadership development initiatives and capability driven development strategies'],
+            ['kawaljeetsingh-description', 'Kawaljeet (Goldy) has over a decade of experience designing and delivering end-to-end sales performance management solutions around the globe'],
+            
+            /******* our-staff Component *******/
+            ['ourstaff', 'Our Staff'],
+            ['ourstaff-message', 'You will find highly skilled, credentialed, and experienced professionals on the Aspire Digital team.  We are software developers, process consultants, and SAP specialists. Experts at meeting our clients\' needs, with Aspire Digital, you can have SAP your way.'],
+            ['leadership', 'Leadership'],
+            ['indiateam', 'India Team'],
+            ['uaeteam', 'UAE Team'],
+            ['usateam', 'USA Team'],
+
 
         ]);
     }

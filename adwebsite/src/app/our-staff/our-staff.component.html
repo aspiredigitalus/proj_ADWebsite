@@ -1,7 +1,7 @@
 <div class="header-section">
     <div class="container header-section-inner">
-        <h2 class="page-title">Our Staff</h2>
-        <p class="header-text">You will find highly skilled, credentialed, and experienced professionals on the Aspire Digital team.  We are software developers, process consultants, and SAP specialists. Experts at meeting our clients' needs, with Aspire Digital, you can have SAP your way.</p>
+        <h2 class="page-title">{{ language.get('ourstaff') }}</h2>
+        <p class="header-text">{{ language.get('ourstaff-message') }}</p>
     </div>
     
 
@@ -9,16 +9,16 @@
 <div class="container">
     <div class="staff-title-container">
         <div id="leadership" [routerLink]="['Leadership']" class="staff-tab">
-            <h3>Leadership</h3>
+            <h3>{{ language.get('leadership') }}</h3>
         </div>
         <div id="india" [routerLink]="['India-Team']" class="staff-tab">
-            <h3>India Team</h3>
+            <h3>{{ language.get('indiateam') }}</h3>
         </div>
         <div id="uae" [routerLink]="['UAE-Team']" class="staff-tab">
-            <h3>UAE Team</h3>
+            <h3>{{ language.get('uaeteam') }}</h3>
         </div>
         <div id="usa" [routerLink]="['USA-Team']" class="staff-tab">
-            <h3>USA Team</h3>
+            <h3>{{ language.get('usateam') }}</h3>
         </div>
         
         

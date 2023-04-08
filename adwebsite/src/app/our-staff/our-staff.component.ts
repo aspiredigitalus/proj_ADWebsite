@@ -3,6 +3,7 @@ import { NavigationEnd, NavigationStart, Router, Scroll } from '@angular/router'
 import { filter } from 'rxjs';
 import { Employee } from '../models/Employee';
 import { EmployeeService } from '../services/employee/employee.service';
+import { LanguageService } from '../services/language/language-service.service';
 
 @Component({
   selector: 'our-staff',
@@ -16,11 +17,19 @@ export class OurStaffComponent implements OnInit {
     indiaId:Element|null = null;
     uaeId:Element|null = null;
 
-    constructor(private router:Router){
-        console.log('constructor');
+    //language service 
+    languageService: LanguageService;
+    language:Map<string,string>;
+
+    constructor(private router:Router, languageService: LanguageService){
+        this.language = new Map();
+        this.languageService = languageService;
+        this.languageService.languageMap.subscribe((lang:Map<string,string>)=>{
+            this.language = lang;
+        });
     }
+
     ngOnInit(): void {
-        console.log('ngOnInit');
         this.leadershipId = document.getElementById('leadership');
         this.usaId = document.getElementById('usa');
         this.indiaId = document.getElementById('india');
