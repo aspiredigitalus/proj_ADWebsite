@@ -1,61 +1,61 @@
 <div class="diversity-ribbon">
     <div class="container">
-        <h3>We recruit the best talent, period.</h3>
+        <h3>{{ language.get('diversity-slogan') }}</h3>
     </div>
 </div>
 <div class="container section-margin-top">
     <div class="diversity-message">
-        <h4>Diversity Drives...</h4>
+        <h4>{{ language.get('diversitydrives') }}</h4>
     </div>
      
     
     <div class="flag-container">
         <div class="flag" id="red" (click)="selected($event)">
-            <h3 class="flag-text">productivity</h3>
+            <h3 class="flag-text">{{ language.get('productivity') }}</h3>
         </div>
         <div class="description-container hidden" id="red-desc">
-            <h3 class="hidden-text">Productivity</h3>
-            <p class="description hidden-text">Diverse teams share their knowledge, experiences, and skills with each other.</p>
+            <h3 class="hidden-text">{{ language.get('productivity-cap') }}</h3>
+            <p class="description hidden-text">{{ language.get('productivity-message') }}</p>
         </div>
 
         <div class="flag" id="green" (click)="selected($event)">
-            <h3 class="flag-text">innovation</h3>
+            <h3 class="flag-text">{{ language.get('innovation') }}</h3>
         </div>
         <div class="description-container hidden" id="green-desc">
-            <h3 class="hidden-text">Innovation</h3>
-            <p class="description hidden-text">Diverse teams exchange more ideas and produce more possible solutions.</p>
+            <h3 class="hidden-text">{{ language.get('innovation-cap') }}</h3>
+            <p class="description hidden-text">{{ language.get('innovation-message') }}</p>
         </div>
 
         <div class="flag" id="blue" (click)="selected($event)">
-            <h3 class="flag-text">creativity</h3>
+            <h3 class="flag-text">{{ language.get('creativity') }}</h3>
         </div>
         <div class="description-container hidden" id="blue-desc">
-            <h3 class="hidden-text">Creativity</h3>
-            <p class="description hidden-text">Diverse teams integrate a wider range of perspectives into brainstorming and problem solving.</p>
+            <h3 class="hidden-text">{{ language.get('creativity-cap') }}</h3>
+            <p class="description hidden-text">{{ language.get('creativity-message') }}</p>
         </div>
 
         <div class="description-container hidden" id="yellow-desc">
-            <h3 class="hidden-text">Solutions</h3>
-            <p class="description hidden-text">Diversity leads to better strategy, decision making and implementation.</p>
+            <h3 class="hidden-text">{{ language.get('solutions-cap') }}</h3>
+            <p class="description hidden-text">{{ language.get('solutions-message') }}</p>
         </div>
         <div class="flag" id="yellow" (click)="selected($event)">
-            <h3 class="flag-text">solutions</h3>
+            <h3 class="flag-text">{{ language.get('solutions') }}</h3>
         </div>
 
         <div class="description-container hidden" id="orange-desc">
-            <h3 class="hidden-text">Revenue</h3>
-            <p class="description hidden-text">Diverse teams generate better solutions and are more productive.</p>
+            <h3 class="hidden-text">{{ language.get('revenue-cap') }}</h3>
+            <p class="description hidden-text">{{ language.get('revenue-message') }}</p>
         </div>
         <div class="flag" id="orange" (click)="selected($event)">
-            <h3 class="flag-text">revenue</h3>
+            <h3 class="flag-text">{{ language.get('revenue') }}</h3>
         </div>
 
         <div class="description-container hidden" id="purple-desc">
-            <h3 class="hidden-text">Understanding</h3>
-            <p class="description hidden-text">Diverse teams are more aware, understanding, and accepting of differing beliefs and customs.</p>
+            <h3 class="hidden-text">{{ language.get('understanding-cap') }}</h3>
+            <p class="description hidden-text">{{ language.get('understanding-message') }}</p>
         </div>
         <div class="flag" id="purple" (click)="selected($event)">
-            <h3 class="flag-text">understanding</h3>
+            <h3 class="flag-text">{{ language.get('understanding') }}</h3>
         </div>
     </div>
 </div>

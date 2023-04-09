@@ -23,13 +23,33 @@ export class English implements LanguageInterface {
             ['reset', 'Reset'],
             ['submit', 'Submit'],
 
+            /******* NAVIGATION *******/
+            ['What We Do', 'What We Do'],
+            ['SAP Solutions', 'SAP Solutions'],
+            ['Digital Services', 'Digital Services'],
+            ['Industries', 'Industries'],
+            ['Who We Are', 'Who We Are'],
+            ['Consultants', 'Consultants'],
+            ['Our Staff', 'Our Staff'],
+            ['Locations', 'Locations'],
+            ['Contact Us', 'Contact Us'],
+            ['Our Thinking', 'Our Thinking'],
+            ['Diversity', 'Diversity'],
+            ['Our Pledge', 'Our Pledge'],
+            ['Mission Statement', 'Mission Statement'],
+            ['Cloud Central Design', 'Cloud Central Design'],
+            ['Careers', 'Careers'],
+            ['Culture', 'Culture'],
+            ['Openings', 'Openings'],
+            ['Apply Now', 'Apply Now'],
+
+
             /******* contact-button Component *******/
             ['contactus', 'Contact Us!'],
 
             /******* contact-us Component *******/
             ['contactus-title', 'Contact Us'],
             
-
             /******* Culture Component *******/
             ['culture-banner-message', 'Aspire makes life and work fit together. Join our team!'],
             ['schedule', 'Schedule'],
@@ -45,6 +65,28 @@ export class English implements LanguageInterface {
             ['events', 'Events'],
             ['events-message', 'We offer company Conventions, Conferences, Meetups and More!  Get to know your coworkers off the clock, but on our dime'],
             
+            /******* diversity Component *******/
+            ['diversity-slogan', 'We recruit the best talent, period.'],
+            ['diversitydrives', 'Diversity Drives...'],
+            ['productivity-cap', 'Productivity'],
+            ['productivity', 'productivity'],
+            ['productivity-message', 'Diverse teams share their knowledge, experiences, and skills with each other.'],
+            ['innovation', 'innovation'],
+            ['innovation-cap', 'Innovation'],
+            ['innovation-message', 'Diverse teams exchange more ideas and produce more possible solutions.'],
+            ['creativity', 'creativity'],
+            ['creativity-cap', 'Creativity'],
+            ['creativity-message', 'Diverse teams integrate a wider range of perspectives into brainstorming and problem solving.'],
+            ['solutions', 'solutions'],
+            ['solutions-cap', 'Solutions'],
+            ['solutions-message', 'Diversity leads to better strategy, decision making and implementation.'],
+            ['revenue', 'revenue'],
+            ['revenue-cap', 'Revenue'],
+            ['revenue-message', 'Diverse teams generate better solutions and are more productive.'],
+            ['understanding', 'understanding'],
+            ['understanding-cap', 'Understanding'],
+            ['understanding-message', 'Diverse teams are more aware, understanding, and accepting of differing beliefs and customs.'],
+
             /******* leadership Component *******/
             ['robinsingh-description', 'Robin is an innovator and leader with a history of success in implementing the latest technologies, defying conventions, challenging the status quo, and delivering complex world class programs'],
             ['corrinefreese-description', 'Corrine has wide-ranging experience leading organization-wide transformation with leadership development initiatives and capability driven development strategies'],

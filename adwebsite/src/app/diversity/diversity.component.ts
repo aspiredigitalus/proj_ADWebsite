@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../services/language/language-service.service';
 
 @Component({
   selector: 'diversity',
@@ -11,6 +12,17 @@ export class DiversityComponent implements OnInit {
     
     descElementArray: Array<HTMLElement> = new Array();
 
+    /** language service */
+    languageService: LanguageService;
+    language:Map<string,string>;
+    
+    constructor(languageService: LanguageService) {
+        this.language = new Map();
+        this.languageService = languageService;
+        this.languageService.languageMap.subscribe((lang:Map<string,string>)=>{
+            this.language = lang;
+        });
+    }
     ngOnInit(): void {
         this.elementArray.push(document.getElementById('red')!);
         this.elementArray.push(document.getElementById('green')!);
