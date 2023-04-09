@@ -11,9 +11,14 @@ import { Component, ElementRef, HostListener, Inject, ViewChild, OnInit } from '
 export class HeaderMainComponent{
 
     languageService: LanguageService;
-
+    language:Map<string,string>;
+    
     constructor(languageService: LanguageService){
+        this.language = new Map();
         this.languageService = languageService;
+        this.languageService.languageMap.subscribe((lang:Map<string,string>)=>{
+            this.language = lang;
+        });
     }
    
     languageSelect(value:any){

@@ -42,7 +42,22 @@ export class English implements LanguageInterface {
             ['Culture', 'Culture'],
             ['Openings', 'Openings'],
             ['Apply Now', 'Apply Now'],
-
+            ['C4C - Cloud for Customer', 'C4C - Cloud for Customer'],
+            ['CPQ - Configure Price Quote', 'CPQ - Configure Price Quote'],
+            ['Sales Performance Management', 'Sales Performance Management'],
+            ['Web Development', 'Web Development'],
+            ['Digital Marketing', 'Digital Marketing'],
+            ['Scalability Planning', 'Scalability Planning'],
+            ['Telecommunications', 'Telecommunications'],
+            ['Industrial', 'Industrial'],
+            ['Manufacturing', 'Manufacturing'],
+            ['Medical', 'Medical'],
+            ['Agriculture', 'Agriculture'],
+            ['Technology', 'Technology'],
+            ['The Process', 'The Process'],
+            ['Money Savings', 'Money Savings'],
+            ['Time Savings', 'Time Savings'],
+            ['Cloud Centered Design', 'Cloud Centered Design'],
 
             /******* contact-button Component *******/
             ['contactus', 'Contact Us!'],

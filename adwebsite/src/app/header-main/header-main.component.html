@@ -6,80 +6,80 @@
     </div>
     <div class="nav-bar">
         <ul class="nav-bar-list">
-            <li class="nav_bar_links nav-link" id="what_we_do"><a [routerLink]="['whatwedo']"><h5>What We Do</h5></a>
+            <li class="nav_bar_links nav-link" id="what_we_do"><a [routerLink]="['whatwedo']"><h5>{{ language.get('What We Do') }}</h5></a>
                 <div class="nav_dropdown menu_what_we_do">
                     <div class="triangle" style="left:150px;"></div>
                     <div class="box">
                         <div class="menu-box menu-box-what">
                             <div>
-                                <a [routerLink]="['SAP-Solutions']"><h3 class="menu-header" id="sap_solutions">SAP Solutions</h3></a>
-                                <a [routerLink]="['CloudForCustomer']"><p class="menu-item" id="cloud_for_customer">C4C - Cloud for Customer</p></a>
-                                <a [routerLink]="['ConfigurePriceQuote']"><p class="menu-item">CPQ - Configure Price Quote</p></a>
-                                <a [routerLink]="['SalesPerformanceManagement']"><p class="menu-item">Sales Performance Management</p></a>
+                                <a [routerLink]="['SAP-Solutions']"><h3 class="menu-header" id="sap_solutions">{{ language.get('SAP Solutions') }}</h3></a>
+                                <a [routerLink]="['CloudForCustomer']"><p class="menu-item" id="cloud_for_customer">{{ language.get('C4C - Cloud for Customer') }}</p></a>
+                                <a [routerLink]="['ConfigurePriceQuote']"><p class="menu-item">{{ language.get('CPQ - Configure Price Quote') }}</p></a>
+                                <a [routerLink]="['SalesPerformanceManagement']"><p class="menu-item">{{ language.get('Sales Performance Management') }}</p></a>
                             </div>
                             <div>
-                                <a [routerLink]="['DigitalServices']"><h3 class="menu-header">Digital Services</h3></a>
-                                <a [routerLink]="['WebDev']"><p class="menu-item">Web Development</p></a>
-                                <a [routerLink]="['DigitalMarketing']"><p class="menu-item">Digital Marketing</p></a>
-                                <a [routerLink]="['ScalePlanning']"><p class="menu-item">Scalability Planning</p></a>
+                                <a [routerLink]="['DigitalServices']"><h3 class="menu-header">{{ language.get('Digital Services') }}</h3></a>
+                                <a [routerLink]="['WebDev']"><p class="menu-item">{{ language.get('Web Development') }}</p></a>
+                                <a [routerLink]="['DigitalMarketing']"><p class="menu-item">{{ language.get('Digital Marketing') }}</p></a>
+                                <a [routerLink]="['ScalePlanning']"><p class="menu-item">{{ language.get('Scalability Planning') }}</p></a>
                             </div>
                             <div>
-                                <a [routerLink]="['Industries']"><h3 class="menu-header">Industries</h3></a>
-                                <a [routerLink]="['Telecom']"><p class="menu-item">Telecommunications</p></a>
-                                <a [routerLink]="['Industrial']"><p class="menu-item">Industrial</p></a>
-                                <a [routerLink]="['Manufacturing']"><p class="menu-item">Manufacturing</p></a>
-                                <a [routerLink]="['Medical']"><p class="menu-item">Medical</p></a>
-                                <a [routerLink]="['Agriculture']"><p class="menu-item">Agriculture</p></a>
-                                <a [routerLink]="['Technology']"><p class="menu-item">Technology</p></a>
+                                <a [routerLink]="['Industries']"><h3 class="menu-header">{{ language.get('Industries') }}</h3></a>
+                                <a [routerLink]="['Telecom']"><p class="menu-item">{{ language.get('Telecommunications') }}</p></a>
+                                <a [routerLink]="['Industrial']"><p class="menu-item">{{ language.get('Industrial') }}</p></a>
+                                <a [routerLink]="['Manufacturing']"><p class="menu-item">{{ language.get('Manufacturing') }}</p></a>
+                                <a [routerLink]="['Medical']"><p class="menu-item">{{ language.get('Medical') }}</p></a>
+                                <a [routerLink]="['Agriculture']"><p class="menu-item">{{ language.get('Agriculture') }}</p></a>
+                                <a [routerLink]="['Technology']"><p class="menu-item">{{ language.get('Technology') }}</p></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="nav_bar_links nav-link" id="who_we_are"><a [routerLink]="['whoweare']"><h5>Who We Are</h5></a>
+            <li class="nav_bar_links nav-link" id="who_we_are"><a [routerLink]="['whoweare']"><h5>{{ language.get('Who We Are') }}</h5></a>
                 <div class="nav_dropdown menu_who_we_are">
                     <div class="triangle" style="left:150px;"></div>
                     <div class="box">
                         <div class="menu-box menu-box-who">
                             <div>
-                                <a [routerLink]="['Consultants']"><h3 class="menu-header">Consultants</h3></a>
-                                <p class="menu-item">The Process</p>
-                                <p class="menu-item">Money Savings</p>
-                                <p class="menu-item">Time Savings</p>
+                                <a [routerLink]="['Consultants']"><h3 class="menu-header">{{ language.get('Consultants') }}</h3></a>
+                                <p class="menu-item">{{ language.get('The Process') }}</p>
+                                <p class="menu-item">{{ language.get('Money Savings') }}</p>
+                                <p class="menu-item">{{ language.get('Time Savings') }}</p>
                             </div>
                             <div style="display:flex; flex-direction: column; justify-content: space-between;">
-                                <a [routerLink]="['Our-Staff']"><h3 class="menu-header">Our Staff</h3></a>
-                                <a [routerLink]="['Locations']"><h3 class="menu-header">Locations</h3></a>
-                                <a [routerLink]="['Contact-Us']"><h3 class="menu-header">Contact Us</h3></a>
+                                <a [routerLink]="['Our-Staff']"><h3 class="menu-header">{{ language.get('Our Staff') }}</h3></a>
+                                <a [routerLink]="['Locations']"><h3 class="menu-header">{{ language.get('Locations') }}</h3></a>
+                                <a [routerLink]="['Contact-Us']"><h3 class="menu-header">{{ language.get('Contact Us') }}</h3></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="nav_bar_links nav-link" id="our_thinking"><a [routerLink]="['ourthinking']"><h5>Our Thinking</h5></a>
+            <li class="nav_bar_links nav-link" id="our_thinking"><a [routerLink]="['ourthinking']"><h5>{{ language.get('Our Thinking') }}</h5></a>
                 <div class="nav_dropdown menu_our_thinking">
                     <div class="triangle" style="left:120px;"></div>
                     <div class="box">
                         <div class="menu-box menu-box-our">
                             <div>
-                                <a [routerLink]="['Diversity']"><h3 class="menu-header">Diversity</h3></a>
-                                <a [routerLink]="['Our-Pledge']"><h3 class="menu-header">Our Pledge</h3></a>
-                                <a [routerLink]="['Mission-Statement']"><h3 class="menu-header">Mission Statement</h3></a>
-                                <a [routerLink]="['Cloud-Centered-Design']"><h3 class="menu-header">Cloud Centered Design</h3></a>
+                                <a [routerLink]="['Diversity']"><h3 class="menu-header">{{ language.get('Diversity') }}</h3></a>
+                                <a [routerLink]="['Our-Pledge']"><h3 class="menu-header">{{ language.get('Our Pledge') }}</h3></a>
+                                <a [routerLink]="['Mission-Statement']"><h3 class="menu-header">{{ language.get('Mission Statement') }}</h3></a>
+                                <a [routerLink]="['Cloud-Centered-Design']"><h3 class="menu-header">{{ language.get('Cloud Centered Design') }}</h3></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="nav_bar_links nav-link" id="careers"><a [routerLink]="['careers']"><h5>Careers</h5></a>
+            <li class="nav_bar_links nav-link" id="careers"><a [routerLink]="['careers']"><h5>{{ language.get('Careers') }}</h5></a>
                 <div class="nav_dropdown menu_careers">
                     <div class="triangle" style="left:70px;"></div>
                     <div class="box">
                         <div class="menu-box menu-box-careers">
                             <div>
-                                <a [routerLink]="['Culture']"><h3 class="menu-header">Culture</h3></a>
-                                <a [routerLink]="['Openings']"><h3 class="menu-header">Openings</h3></a>
-                                <a [routerLink]="['Apply-Now']"><h3 class="menu-header">Apply Now</h3></a>
+                                <a [routerLink]="['Culture']"><h3 class="menu-header">{{ language.get('Culture') }}</h3></a>
+                                <a [routerLink]="['Openings']"><h3 class="menu-header">{{ language.get('Openings') }}</h3></a>
+                                <a [routerLink]="['Apply-Now']"><h3 class="menu-header">{{ language.get('Apply Now') }}</h3></a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
     <div class="language">
         <i class="bi bi-facebook" style="color: var(--color-p500)"></i>
         <a href="https://www.linkedin.com/company/aspire-digital-technologies" target="_blank"><i class="bi bi-linkedin" style="color: var(--color-p500)"></i></a>
-        <select #language (change)="languageSelect(language.value)">
+        <select #selectedlanguage (change)="languageSelect(selectedlanguage.value)">
             <option value="English" selected>English</option>
             <option value="French">French</option>
             <option value="Spanish">Spanish</option>
