@@ -9,7 +9,26 @@ export class English implements LanguageInterface {
             ////////////////////////////////////////////////////
             ////********* Language KEY:VALUE pairs ********/////
             ////////////////////////////////////////////////////
-            ['firstTag', 'First Tag'],
+  
+            /******* GENERIC VALIDATION *******/
+            ['required', 'Required Field'],
+
+            /******* GENERIC FORM *******/
+            ['name', 'Name'],
+            ['company', 'Company'],
+            ['phonenumber', 'Phone Number'],
+            ['email', 'Email'],
+            ['subject', 'Subject'],
+            ['message', 'Message'],
+            ['reset', 'Reset'],
+            ['submit', 'Submit'],
+
+            /******* contact-button Component *******/
+            ['contactus', 'Contact Us!'],
+
+            /******* contact-us Component *******/
+            ['contactus-title', 'Contact Us'],
+            
 
             /******* Culture Component *******/
             ['culture-banner-message', 'Aspire makes life and work fit together. Join our team!'],

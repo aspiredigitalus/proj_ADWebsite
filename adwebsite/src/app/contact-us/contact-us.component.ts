@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl, RequiredValidator, Validators } from '@angular/forms';
 import { ContactUs } from '../models/ContactUs';
 import { ApplyNowService } from '../services/apply-now.service';
+import { LanguageService } from '../services/language/language-service.service';
 
 @Component({
   selector: 'contact-us',
@@ -28,9 +29,21 @@ export class ContactUsComponent {
         ])
     });
     contact:ContactUs;
-    constructor(private appService: ApplyNowService) {
+
+    /** language service */
+    languageService: LanguageService;
+    language:Map<string,string>;
+    
+    constructor(private appService: ApplyNowService, languageService: LanguageService) {
         this.contact = new ContactUs();
+        this.language = new Map();
+        this.languageService = languageService;
+        this.languageService.languageMap.subscribe((lang:Map<string,string>)=>{
+            this.language = lang;
+        });
     }
+
+
 
     onSubmit(){ 
         this.contact.setName(this.contactUsForm.controls.name.value!);
