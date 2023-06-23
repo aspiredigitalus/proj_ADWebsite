@@ -1,6 +1,5 @@
 ---
 deployment:
   tasks:
-    - rm -r /home/aspiredigital/public_html/*
     - export DEPLOYPATH=/home/aspiredigital/public_html/
     - /bin cp /adwebsite/dist/adwebsite/* $DEPLOYPATH
