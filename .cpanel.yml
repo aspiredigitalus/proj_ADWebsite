@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/aspiredigital/public_html/
-    - /bin/cp /home/aspiredigital/repositories/proj_ADWebsite/adwebsite/dist/adwebsite/* $DEPLOYPATH
+    - /bin/cp -R /home/aspiredigital/repositories/proj_ADWebsite/adwebsite/dist/adwebsite/* $DEPLOYPATH
