@@ -3,4 +3,4 @@ deployment:
   tasks:
     - rm -r /home/aspiredigital/public_html/*
     - export DEPLOYPATH=/home/aspiredigital/public_html/
-    - /adwebsite/dist/adwebsite/* $DEPLOYPATH
+    - /adwebsite/dist/adwebsite/ -R images $DEPLOYPATH
