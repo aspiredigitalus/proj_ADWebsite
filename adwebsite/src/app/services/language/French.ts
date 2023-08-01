@@ -2,8 +2,8 @@ import { LanguageInterface } from "./language-interface";
 
 export class French implements LanguageInterface {
     languagePairs: Map<string, string>;
-    
-    constructor(){
+
+    constructor() {
         this.languagePairs = new Map([
 
             ////////////////////////////////////////////////////
@@ -25,12 +25,15 @@ export class French implements LanguageInterface {
             ['apprenticeships-message', 'Nous offrons des emplois à temps plein qui vous permettent de gagner de l\'argent tout en apprenant'],
             ['events', 'Événements'],
             ['events-message', 'Nous proposons des conventions d\'entreprise, des conférences, des rencontres et plus encore ! Apprenez à connaître vos collègues en dehors de l\'horloge, mais à nos frais'],
-            
+            ['healthcare', 'Soins de santé'],
+            ['healthcare-message', 'Nous proposons plusieurs options de couverture médicale complète, y compris les soins dentaires et la vision'],
+            ['401k', '401K'],
+            ['401k-message', "Nous voulons nous assurer que nos employés ne sont pas seulement pris en charge aujourd'hui, mais aussi à l'avenir."],
 
         ]);
     }
-    public getLanguagePairs():Map<string, string> {
-        return this.languagePairs; 
+    public getLanguagePairs(): Map<string, string> {
+        return this.languagePairs;
     }
 
 }

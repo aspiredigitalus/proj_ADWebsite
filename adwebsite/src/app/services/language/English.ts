@@ -2,14 +2,14 @@ import { LanguageInterface } from "./language-interface";
 
 export class English implements LanguageInterface {
     languagePairs: Map<string, string>;
-    
-    constructor(){
+
+    constructor() {
         this.languagePairs = new Map([
 
             ////////////////////////////////////////////////////
             ////********* Language KEY:VALUE pairs ********/////
             ////////////////////////////////////////////////////
-  
+
             /******* GENERIC VALIDATION *******/
             ['required', 'Required Field'],
 
@@ -64,7 +64,7 @@ export class English implements LanguageInterface {
 
             /******* contact-us Component *******/
             ['contactus-title', 'Contact Us'],
-            
+
             /******* Culture Component *******/
             ['culture-banner-message', 'Aspire makes life and work fit together. Join our team!'],
             ['schedule', 'Schedule'],
@@ -79,7 +79,11 @@ export class English implements LanguageInterface {
             ['apprenticeships-message', 'We offer full-time jobs that allow you to earn while you learn'],
             ['events', 'Events'],
             ['events-message', 'We offer company Conventions, Conferences, Meetups and More!  Get to know your coworkers off the clock, but on our dime'],
-            
+            ['healthcare', 'Healthcare'],
+            ['healthcare-message', 'We offer several comprehensive medical coverage options, including dental and vision'],
+            ['401k', '401K'],
+            ['401k-message', 'We want to make sure our employees are not just taken care of today, but also in the future.'],
+
             /******* diversity Component *******/
             ['diversity-slogan', 'We recruit the best talent, period.'],
             ['diversitydrives', 'Diversity Drives...'],
@@ -106,7 +110,7 @@ export class English implements LanguageInterface {
             ['robinsingh-description', 'Robin is an innovator and leader with a history of success in implementing the latest technologies, defying conventions, challenging the status quo, and delivering complex world class programs'],
             ['corrinefreese-description', 'Corrine has wide-ranging experience leading organization-wide transformation with leadership development initiatives and capability driven development strategies'],
             ['kawaljeetsingh-description', 'Kawaljeet (Goldy) has over a decade of experience designing and delivering end-to-end sales performance management solutions around the globe'],
-            
+
             /******* our-staff Component *******/
             ['ourstaff', 'Our Staff'],
             ['ourstaff-message', 'You will find highly skilled, credentialed, and experienced professionals on the Aspire Digital team.  We are software developers, process consultants, and SAP specialists. Experts at meeting our clients\' needs, with Aspire Digital, you can have SAP your way.'],
@@ -118,8 +122,8 @@ export class English implements LanguageInterface {
 
         ]);
     }
-    public getLanguagePairs():Map<string, string> {
-        return this.languagePairs; 
+    public getLanguagePairs(): Map<string, string> {
+        return this.languagePairs;
     }
 
 }
